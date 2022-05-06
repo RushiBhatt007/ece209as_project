@@ -2,7 +2,7 @@
 
 ## 1. Motivation & Objective
 
-What are you trying to do and why? (plain English without jargon)
+Human Activity Recognition (HAR) is the process of automatically inferring a user’s activity (e.g., walking, sitting, standing) based on sensor data (e.g., accelerometers, gyroscope) typically from devices like smartphones and smartwatches. However traditional machine learning method’s performance decreases significantly in real-life applications due to the problem of data missingness. Data Missingness in sensors typically happens due to power limitation, hardware failure, transmission packet loss, and many more. Our goal through this project is two folds, first is to investigate the data missingness distribution for Inertial Measurement Units (IMU). The second is to build robust models that not only impute the IMU signals but also successfully perform the activity classification task.
 
 ## 2. State of the Art & Its Limitations
 
@@ -14,7 +14,14 @@ What is new in your approach and why do you think it will be successful?
 
 ## 4. Potential Impact
 
-If the project is successful, what difference will it make, both technically and broadly?
+HAR classification from IMU signals is applicable in various domains like sports, eldercare, and healthcare. However, these HAR models, when deployed on-edge devices, won’t necessarily be tested on “clean data.” Missing data is an inherent problem in many applications involving sensors, and therefore mitigating it can have tremendous implications.
+
+Following are the potential impact that our work can make: 
+
+- **Robust HAR on-edge**: Our work can improve the performance of edge devices in scenarios where power constraints, channel noise, and other interferences cause data missingness. 
+- **IMUs beyond HAR**: IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized for the performance of the abovementioned tasks. 
+- **Generalized time-series missingness**: We make very few assumptions about the signals and their missingness (experiment over multiple types of missingness); therefore, it is also possible to extend these robust models to other time-series-based problems like stock market prediction and EEG/ ECG classification, and COVID-spread forecast.
+
 
 ## 5. Challenges
 

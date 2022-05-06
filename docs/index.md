@@ -8,9 +8,9 @@ Human Activity Recognition (HAR) is the process of automatically inferring a use
 
 # Team
 
-* Name of team member \#1 Rushi Yogeshkumar Bhatt
-* Name of team member \#2 Ronak Kaoshik
-* Name of team member \#3 Jinru Cai
+* Rushi Yogeshkumar Bhatt
+* Ronak Kaoshik
+* Jinru Cai
 
 # Required Submissions
 
