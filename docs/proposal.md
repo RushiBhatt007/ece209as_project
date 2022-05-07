@@ -10,17 +10,13 @@ Human Activity Recognition (HAR) is the process of automatically inferring a use
 Human Activity Recognition (HAR) involving missing data hasn’t been thoroughly explored. There’s quality research work going particularly in the domain of imputation of time-series signals, however, it has been focused on the medical and finance domain. The most advanced and recent research for time-series imputation is ‘SAITS: Self-attention based imputation for time-series. It learns missing values from a weighted combination
 of two diagonally-masked self-attention blocks. This research work is based on datasets such as PhysioNet, Electricity Load Diagram, and Beijing Multi-site air quality. The best research work focusing on Human Activity Recognition is ‘BRITS: Bidirectional Recurrent Imputation for Time-series’. SAITS has been seen to outperform BRITS by a significant margin for both imputation and classification tasks on the non-HAR datasets. Let’s look at the evolution of the time-series imputation-related research work.
 
-RNN(Recurrent neural network)-based:  
-RNN-based architectures were first established in [9], where they used a GRU-based network for the clinical time-series classification with missing data. In [7], the same research group later designed an RNN-based method targeting both imputation and classification tasks. This, later on, evolved into the state-of-the-art work (for HAR data), that’s the use of Bi-directional RNNs in BRITS which has been published at NeurIPS’18. BRITS proposes a combination of a recurrent dynamic network and regression models that simultaneously work to impute the missing values. This makes BRITS robust to multiple correlated missing values and can be applied to different settings(datasets) as a data-driven imputation procedure. The limitation of this work is that BRITS has eliminated just 10% of the time-series data randomly from the ground truth. Since BRITS’ network depends on the value of the missing variables (using them as variables for the RNN graph), an increase in the missingness will possibly lead to a quick increase in the error rate and consecutively the classification accuracy. Also, attention-based networks have performed way better than BRITS on other datasets. 
+**RNN(Recurrent neural network)-based**: RNN-based architectures were first established in [9], where they used a GRU-based network for the clinical time-series classification with missing data. In [7], the same research group later designed an RNN-based method targeting both imputation and classification tasks. This, later on, evolved into the state-of-the-art work (for HAR data), that’s the use of Bi-directional RNNs in BRITS which has been published at NeurIPS’18. BRITS proposes a combination of a recurrent dynamic network and regression models that simultaneously work to impute the missing values. This makes BRITS robust to multiple correlated missing values and can be applied to different settings(datasets) as a data-driven imputation procedure. The limitation of this work is that BRITS has eliminated just 10% of the time-series data randomly from the ground truth. Since BRITS’ network depends on the value of the missing variables (using them as variables for the RNN graph), an increase in the missingness will possibly lead to a quick increase in the error rate and consecutively the classification accuracy. Also, attention-based networks have performed way better than BRITS on other datasets. 
 
-GAN(Generative Adversarial Network)-based: 
-In [10], a generative adversarial network-based architecture has been introduced for the imputation task. The generator itself however consists of a GRU unit meant for imputation. Imputation is being treated as a data generation task and once the complete time-series has been obtained, it is used in downstream applications of prediction amongst others. This has been experimented with datasets in the Medical and enovironmental domain. E2GAN [11] is a better version of this network which solves the imputation task in a single stage while making use of an auto-encoder based GRU network in the generator block. There’s also a non-autoregressive model called NAOMI [12] for spatio-temporal sequence imputation which consists of a bidirectional encoder and a multiresolution decoder. These networks were tested on PhysioNet (medical) and Air-quality related datasets. 
+**GAN(Generative Adversarial Network)-based**: In [10], a generative adversarial network-based architecture has been introduced for the imputation task. The generator itself however consists of a GRU unit meant for imputation. Imputation is being treated as a data generation task and once the complete time-series has been obtained, it is used in downstream applications of prediction amongst others. This has been experimented with datasets in the Medical and enovironmental domain. E2GAN [11] is a better version of this network which solves the imputation task in a single stage while making use of an auto-encoder based GRU network in the generator block. There’s also a non-autoregressive model called NAOMI [12] for spatio-temporal sequence imputation which consists of a bidirectional encoder and a multiresolution decoder. These networks were tested on PhysioNet (medical) and Air-quality related datasets. 
 
-VAE(Variational Autoencoder Network)-based:
-[13] introduces GP-VAE, a variational auto-encoder (VAE) architecture for the imputation of time series along with a Gaussian process (GP) prior defined in the latent space. This GP-prior is helps with the embedding of data into a smooth explainable representation. There are other similar VAE based works which focus on other statistical aspects of the time-series and infuse that information with the GP-Prior. 
+**VAE(Variational Autoencoder Network)-based**: [13] introduces GP-VAE, a variational auto-encoder (VAE) architecture for the imputation of time series along with a Gaussian process (GP) prior defined in the latent space. This GP-prior is helps with the embedding of data into a smooth explainable representation. There are other similar VAE based works which focus on other statistical aspects of the time-series and infuse that information with the GP-Prior. 
 
-Self-attention-based: 
-SAITS- Self-attention based time-seires is currently the best research work for tim-series-imputation that outperforms the reconstruction performance of all the previous RNN/GAN/VAE based architectures. It has been implemented on the datasets of PhysioNet, Air-quality and electricity load monitoring systems. As mentioned earlier, learns missing values from a weighted combination of two diagonally-masked self-attention blocks which explicitly capture both the temporal dependencies and feature correlations for between time steps which in turn improves imputation accuracy and training speed. 
+**Self-attention-based**: SAITS- Self-attention based time-seires is currently the best research work for tim-series-imputation that outperforms the reconstruction performance of all the previous RNN/GAN/VAE based architectures. It has been implemented on the datasets of PhysioNet, Air-quality and electricity load monitoring systems. As mentioned earlier, learns missing values from a weighted combination of two diagonally-masked self-attention blocks which explicitly capture both the temporal dependencies and feature correlations for between time steps which in turn improves imputation accuracy and training speed. 
 
 All the previous RNN based networks have memory constraints when dealing with long-term dependency in time series when the number of time-steps missing in the data sample is relatively big. There’s also susceptibility for compounding error for most of these models predicting on the basis of the recently imputation time-series. 
 The GAN as well as VAE based research works involve a complex training cycle caused due to issues such as non-convergence and mode-collapse due to their respective loss formulations. 
@@ -94,8 +90,6 @@ The project implementation can be broken down into the following tasks:
 
 ### 9.a. Papers
 
-List the key papers that you have identified relating to your project idea, and describe how they related to your project. Provide references (with full citation in the References section below).
-
 As our goal is to using technology to recognize human activites based on partial or missing data, therefore we will mainly focus on what kinds of technology do others use to recognize activities, specificly, the machine learning/deep learning model. And what kinds of method do other use to handle with missing data when we reading tons of papers. 
 
 In this paper [1], the author developed a Multi-directional Recurrent Neural Network (M-RNN). The main difference of An M-RNN between a bi-directional RNN is that  it sequentially operates across streams.
@@ -117,39 +111,30 @@ In this paper [8] the author propose a new approach, based on a novel deep learn
 In this paper [9] the author demonstrate a simple strategy to cope with missing data in sequential inputs, addressing the task of multilabel classification of diagnoses given clinical time series.
 
 In this paper [10] the author propose to learn the overall distribution of a multivariate time series dataset with GAN, which is further used to generate the missing values for each sample. 
-(https://papers.nips.cc/paper/2018/hash/96b9bff013acedfb1d140579e2fbeb63-Abstract.html)
 
 In this paper [11] the author proposes an end-to-end generative model E²GAN to impute missing values in multivariate time series. With the help of the discriminative loss and the squared error loss, E²GAN can impute the incomplete time series by the nearest generated complete time series at one stage.
-(https://www.ijcai.org/proceedings/2019/429)
 
 In this paper [12] the author take a non-autoregressive approach and propose a novel deep generative model: Non-AutOregressive Multiresolution Imputation (NAOMI) to impute long-range sequences given arbitrary missing patterns.
-(https://proceedings.neurips.cc/paper/2019/file/50c1f44e426560f3f2cdcb3e19e39903-Paper.pdf)
 
-In this paper [13]] the author propose a new deep sequential latent variable model for dimensionality reduction and data imputation.
-(https://proceedings.mlr.press/v108/fortuin20a.html)
-
+In this paper [13] the author propose a new deep sequential latent variable model for dimensionality reduction and data imputation.
 
 ### 9.b. Datasets
 
-List datasets that you have identified and plan to use. Provide references (with full citation in the References section below).
-
 UCI UCI HAR Dataset
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
 (https://archive.ics.uci.edu/ml/machine-learning-databases/00240/)
 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
 
 ### 9.c. Software
 
-List softwate that you have identified and plan to use. Provide references (with full citation in the References section below).
-GitHub [13] is the codebase for BRITS implementation of paper [6]
-GitHub [14] is the codebase for Robust-Deep-Learning-Pipeline
-implementation of paper [3]
-GitHub [15] is the codebase for LSTM-Human-Activity-Recognitionimplementation of paper [4]
+- GitHub [13] is the codebase for BRITS implementation of paper [6]
+- GitHub [14] is the codebase for Robust-Deep-Learning-Pipeline
+- GitHub codebase for implementation of paper [3]
+- GitHub [15] is the codebase for LSTM-Human-Activity-Recognitionimplementation of paper [4]
 	
 
 ## 10. References
-
-List references correspondign to citations in your text above. For papers please include full citation and URL. For datasets and software include name and URL.
 
 [1] J. Yoon, W. R. Zame, και M. van der Schaar, ‘Deep Sensing: Active Sensing using Multi-directional Recurrent Neural Networks, International Conference on Learning Representations, 2018. (https://openreview.net/pdf?id=r1SnX5xCb)
 
@@ -178,14 +163,20 @@ Values(https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9675815)
 (https://proceedings.mlr.press/v56/Lipton16.html)
 
 [10] Yonghong Luo, Xiangrui Cai, Ying ZHANG, Jun Xu, and Yuan xiaojie. Multivariate time series imputation with generative adversarial networks. In S. Bengio, H. Wallach, H. Larochelle, K. Grauman, N. Cesa-Bianchi, and R. Garnett, editors, Advances in Neural Information Processing Systems, volume 31. Curran Associates, Inc., 2018.
+(https://papers.nips.cc/paper/2018/hash/96b9bff013acedfb1d140579e2fbeb63-Abstract.html)
 
 [11]  Yonghong Luo, Ying Zhang, Xiangrui Cai, and Xiaojie Yuan. E2GAN: End-to-end generative adversarial network for multivariate time series imputation. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19, pages 3094–3100. International Joint Conferences on Artificial Intelligence Organization, 7 2019.
+(https://www.ijcai.org/proceedings/2019/429)
 
 [12] Yukai Liu, Rose Yu, Stephan Zheng, Eric Zhan, and Yisong Yue. NAOMI: Non-autoregressive multiresolution sequence imputation. In Advances in Neural Information Processing Systems, volume 32. Curran Associates, Inc., 2019
+(https://proceedings.neurips.cc/paper/2019/file/50c1f44e426560f3f2cdcb3e19e39903-Paper.pdf)
 
 [13] Vincent Fortuin, Dmitry Baranchuk, Gunnar Raetsch, and Stephan Mandt. GP-VAE: Deep probabilistic time series imputation. In Silvia Chiappa and Roberto Calandra, editors, Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics, volume 108 of Proceedings of Machine Learning Research, pages 1651–1661. PMLR, 26–28 Aug 2020.
+(https://proceedings.mlr.press/v108/fortuin20a.html)
 
 [14] https://github.com/caow13/BRITS
+
 [15] https://github.com/nesl/Robust-Deep-Learning-Pipeline/blob/main/README.md
-[16]https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition/blob/master/README.md
+
+[16] https://github.com/guillaume-chevalier/LSTM-Human-Activity-Recognition/blob/master/README.md
 
