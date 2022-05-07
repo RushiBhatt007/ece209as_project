@@ -6,11 +6,35 @@ Human Activity Recognition (HAR) is the process of automatically inferring a use
 
 ## 2. State of the Art & Its Limitations
 
-How is it done today, and what are the limits of current practice?
+
+Human Activity Recognition (HAR) involving missing data hasn’t been thoroughly explored. There’s quality research work going particularly in the domain of imputation of time-series signals, however, it has been focused on the medical and finance domain. The most advanced and recent research for time-series imputation is ‘SAITS: Self-attention based imputation for time-series. It learns missing values from a weighted combination
+of two diagonally-masked self-attention blocks. This research work is based on datasets such as PhysioNet, Electricity Load Diagram, and Beijing Multi-site air quality. The best research work focusing on Human Activity Recognition is ‘BRITS: Bidirectional Recurrent Imputation for Time-series’. SAITS has been seen to outperform BRITS by a significant margin for both imputation and classification tasks on the non-HAR datasets. Let’s look at the evolution of the time-series imputation-related research work.
+
+RNN(Recurrent neural network)-based:  
+RNN-based architectures were first established in [9], where they used a GRU-based network for the clinical time-series classification with missing data. In [7], the same research group later designed an RNN-based method targeting both imputation and classification tasks. This, later on, evolved into the state-of-the-art work (for HAR data), that’s the use of Bi-directional RNNs in BRITS which has been published at NeurIPS’18. BRITS proposes a combination of a recurrent dynamic network and regression models that simultaneously work to impute the missing values. This makes BRITS robust to multiple correlated missing values and can be applied to different settings(datasets) as a data-driven imputation procedure. The limitation of this work is that BRITS has eliminated just 10% of the time-series data randomly from the ground truth. Since BRITS’ network depends on the value of the missing variables (using them as variables for the RNN graph), an increase in the missingness will possibly lead to a quick increase in the error rate and consecutively the classification accuracy. Also, attention-based networks have performed way better than BRITS on other datasets. 
+
+GAN(Generative Adversarial Network)-based: 
+In [10], a generative adversarial network-based architecture has been introduced for the imputation task. The generator itself however consists of a GRU unit meant for imputation. Imputation is being treated as a data generation task and once the complete time-series has been obtained, it is used in downstream applications of prediction amongst others. This has been experimented with datasets in the Medical and enovironmental domain. E2GAN [11] is a better version of this network which solves the imputation task in a single stage while making use of an auto-encoder based GRU network in the generator block. There’s also a non-autoregressive model called NAOMI [12] for spatio-temporal sequence imputation which consists of a bidirectional encoder and a multiresolution decoder. These networks were tested on PhysioNet (medical) and Air-quality related datasets. 
+
+VAE(Variational Autoencoder Network)-based:
+[13] introduces GP-VAE, a variational auto-encoder (VAE) architecture for the imputation of time series along with a Gaussian process (GP) prior defined in the latent space. This GP-prior is helps with the embedding of data into a smooth explainable representation. There are other similar VAE based works which focus on other statistical aspects of the time-series and infuse that information with the GP-Prior. 
+
+Self-attention-based: 
+SAITS- Self-attention based time-seires is currently the best research work for tim-series-imputation that outperforms the reconstruction performance of all the previous RNN/GAN/VAE based architectures. It has been implemented on the datasets of PhysioNet, Air-quality and electricity load monitoring systems. As mentioned earlier, learns missing values from a weighted combination of two diagonally-masked self-attention blocks which explicitly capture both the temporal dependencies and feature correlations for between time steps which in turn improves imputation accuracy and training speed. 
+
+All the previous RNN based networks have memory constraints when dealing with long-term dependency in time series when the number of time-steps missing in the data sample is relatively big. There’s also susceptibility for compounding error for most of these models predicting on the basis of the recently imputation time-series. 
+The GAN as well as VAE based research works involve a complex training cycle caused due to issues such as non-convergence and mode-collapse due to their respective loss formulations. 
+
 
 ## 3. Novelty & Rationale
 
-What is new in your approach and why do you think it will be successful?
+We will be exploring self-attention networks, particularly SAITS for the task of imputation followed by time-series classification for Human Activity Recognition related dataset. There will be a set of analysis that we will focus on namely; 
+SAITS inspired model implementation on HAR dataset.
+Customizing the SAITS architecture for HAR dataset.
+Exploring various randomness models such as MAR, MCAR, MNAR with varied proportions of data missing and suggest necessary improvements to the model.
+If possible, develop an end-to-end system for inference of the activity class on real-time time-series signal.
+It has been seen that SAITS performs exceptionally well on datasets in the medical, electricity and environmental domain. There exists a considerable similarity in between these different time-series owing to underlying patterns. Similarly, HAR data will have set of underlying patterns which can be readily identified with various ML and DL approaches. Also, BRITS has successfully made use of a reconstructed time series and identified the corresponding task with high accuracy. However, the reconstruction accuracy is not up to the mark. Hence, based on the previous research works and the performance of SAITS in other domains, we believe that it will perform better than previous approaches used for HAR.
+
 
 ## 4. Potential Impact
 
@@ -43,7 +67,13 @@ Some of the challenges and risks associated with this research project are:
 
 ## 7. Metrics of Success
 
-What are metrics by which you would check for success?
+We will be using two major set of evaluation metrics to determine the success of our research work. 
+Metrics for imputation performance:
+MAE (Mean Absolute Error), RMSE (Root Mean Square Error), and MRE (Mean Relative Error)
+Metrics for classification performance:
+Accuracy(percentage of correct predictions),F1-Score(to ensure all class being predicted equally well), ROC-AUC, PR-AUC 
+We will develop all the associated insights and diagrams to better understand the performance of our network.
+
 
 ## 8. Execution Plan
 
