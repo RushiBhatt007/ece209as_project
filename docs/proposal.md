@@ -18,7 +18,7 @@ of two diagonally-masked self-attention blocks. This research work is based on d
 
 **Self-attention-based**: SAITS- Self-attention based time-seires is currently the best research work for tim-series-imputation that outperforms the reconstruction performance of all the previous RNN/GAN/VAE based architectures. It has been implemented on the datasets of PhysioNet, Air-quality and electricity load monitoring systems. As mentioned earlier, learns missing values from a weighted combination of two diagonally-masked self-attention blocks which explicitly capture both the temporal dependencies and feature correlations for between time steps which in turn improves imputation accuracy and training speed. 
 
-All the previous RNN based networks have memory constraints when dealing with long-term dependency in time series when the number of time-steps missing in the data sample is relatively big. There’s also susceptibility for compounding error for most of these models predicting on the basis of the recently imputation time-series. 
+All the previous RNN based networks have memory constraints when dealing with long-term dependency in time series when the number of time-steps missing in the data sample is relatively big. There’s also susceptibility for compounding error for most of these models predicting on the basis of the recently imputated time-series. 
 The GAN as well as VAE based research works involve a complex training cycle caused due to issues such as non-convergence and mode-collapse due to their respective loss formulations. 
 
 
@@ -90,7 +90,7 @@ The project implementation can be broken down into the following tasks:
 
 ### 9.a. Papers
 
-As our goal is to using technology to recognize human activites based on partial or missing data, therefore we will mainly focus on what kinds of technology do others use to recognize activities, specificly, the machine learning/deep learning model. And what kinds of method do other use to handle with missing data when we reading tons of papers. 
+A brief summary of the research work mentioned in earlier sections can be found here. There are numerous publications at top conferences which focus on data imputation using architectures based on RNNs/GANs/VAEs/Self-attention. 
 
 In this paper [1], the author developed a Multi-directional Recurrent Neural Network (M-RNN). The main difference of An M-RNN between a bi-directional RNN is that  it sequentially operates across streams.
 
