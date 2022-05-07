@@ -94,11 +94,11 @@ A brief summary of the research work mentioned in earlier sections can be found 
 
 In this paper [1], the author developed a Multi-directional Recurrent Neural Network (M-RNN). The main difference of An M-RNN between a bi-directional RNN is that  it sequentially operates across streams.
 
-In this paper [2] The author construct personalized policies using logged data when there are missing values in the attributes of features as a solution to missing data.
+In this paper [2], the authors construct personalized policies using logged data when there are missing values in the attributes of features as a solution to missing data. It consists of a Variational auto-encoder that predicts a posterior distribution for the missing data.
 
-In this paper [3] the author uses intelligent data augmentation techniques to handle with missing data.. Specifically, the author use controlled jitter in window length and add artificial misalignments in data timestamps between sensors, along with masking representations of missing data. 
+In this paper [3] the authors uses intelligent data augmentation techniques to handle the missing data. Specifically, the authors use controlled jitter in window length and add artificial misalignments in data timestamps between sensors, along with masking representations of missing data. 
 
-In this paper [4] the author design a noval deep network architecture using residual bidirectional long short-term memory (LSTM) cells. The main advantage of this model is that residual connections between stacked cells act as highways for gradients, which can pass underlying information directly to the upper layer, effectively avoiding the gradient vanishing problem. 
+In this paper [4] the authors design a noval deep network architecture using residual bidirectional long short-term memory (LSTM) cells. The main advantage of this model is that residual connections between stacked cells act as highways for gradients, which can pass underlying information directly to the upper layer, effectively avoiding the gradient vanishing problem. 
 
 In this paper [5] proposes SAITS, a novel method based on the self-attention mechanism for missing value imputation in multivariate time series.
 
