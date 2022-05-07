@@ -19,7 +19,7 @@ HAR classification from IMU signals is applicable in various domains like sports
 Following are the potential impact that our work can make: 
 
 - **Robust HAR on-edge**: Our work can improve the performance of edge devices in scenarios where power constraints, channel noise, and other interferences cause data missingness. 
-- **IMUs beyond HAR**: IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized for the performance of the abovementioned tasks. 
+- **IMUs beyond HAR**: IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized to improve the performance of the abovementioned tasks. 
 - **Generalized time-series missingness**: We make very few assumptions about the signals and their missingness (experiment over multiple types of missingness); therefore, it is also possible to extend these robust models to other time-series-based problems like stock market prediction and EEG/ ECG classification, and COVID-spread forecast.
 
 
@@ -33,7 +33,13 @@ Some of the challenges and risks associated with this research project are:
 
 ## 6. Requirements for Success
 
-What skills and resources are necessary to perform the project?
+- Access to HAR dataset
+- Access to a local machine with good GPU/ Google Colab Pro
+- Strong fundamental knowledge of machine learning, signal processing, and deep learning
+- Thorough understanding of baseline imputation techniques and SOTA papers
+- Strong programming skills in Python along with hands-on experience in working with Keras, Numpy, Tensorflow, and Pytorch
+- Ability to rapidly replicate existing work as well as perform long and iterative experimentations with modifications
+
 
 ## 7. Metrics of Success
 
@@ -51,7 +57,7 @@ The project implementation can be broken down into the following tasks:
 	- default value (e.g., 0), mean, median, mode, smoothing, interpolation, KNN
 	- Forward filling
 	- Mask (indicator) variable approach
-- Replicating State-of-the-Art (SOTA) implementation
+- Replicating SOTA implementation
 - Performance metrics, comparative analysis, and visualizations 
 
 ## 9. Related Work
