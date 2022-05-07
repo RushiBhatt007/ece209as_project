@@ -25,7 +25,11 @@ Following are the potential impact that our work can make:
 
 ## 5. Challenges
 
-What are the challenges and risks?
+Some of the challenges and risks associated with this research project are:
+
+- Performing a thorough investigation and having a deep understanding of the various types of IMU data missingness distribution. Although it is easy to assume the missingness distribution to be random (MAR, MCAR, MNAR) like in most literature, it might not necessarily be the case in real-life applications.
+- Making assumptions about the missingness distribution (e.g., fading channel) can also be a potential risk because it can make the model biased toward such missingness. 
+- Most State of the Art implementations on data imputation deal with low-frequency biological data sets like medical records. A potential challenge would be to extend similar models and ideas for high-frequency data from IMUs for the task of HAR.   
 
 ## 6. Requirements for Success
 
@@ -37,7 +41,18 @@ What are metrics by which you would check for success?
 
 ## 8. Execution Plan
 
-Describe the key tasks in executing your project, and in case of team project describe how will you partition the tasks.
+The project implementation can be broken down into the following tasks:
+
+- Data preprocessing
+- IMU data missingness analysis
+	- Random - MAR, MCAR, MNAR
+	- Prior distribution’s knowledge-based missingness
+- Baseline model implementations
+	- default value (e.g., 0), mean, median, mode, smoothing, interpolation, KNN
+	- Forward filling
+	- Mask (indicator) variable approach
+- Replicating State-of-the-Art (SOTA) implementation
+- Performance metrics, comparative analysis, and visualizations 
 
 ## 9. Related Work
 
