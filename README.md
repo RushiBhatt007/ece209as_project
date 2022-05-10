@@ -1,4 +1,4 @@
-# Mitigating Missingness for Human Activity Recognition
+# Mitigating Missing data for Human Activity Recognition
 This is repository template for UCLA ECE209AS projects.
 
 Use the folders as follows:
