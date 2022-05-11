@@ -11,7 +11,7 @@ Traditional machine learning method’s for Human Activity Recognition (HAR) is 
 
 # Required Submissions
 
-* [Proposal](proposal)
-* [Midterm Checkpoint Presentation Slides](http://)
+* [Proposal](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/proposal.md)
+* [Midterm Checkpoint Presentation Slides](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/Midterm_checkpoint_presentation.pdf)
 * [Final Presentation Slides](http://)
 * [Final Report](report)
