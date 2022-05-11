@@ -120,11 +120,18 @@ In this paper [13] the author propose a new deep sequential latent variable mode
 
 ### 9.b. Datasets
 
-UCI UCI HAR Dataset
+- UCI UCI HAR Dataset
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
 (https://archive.ics.uci.edu/ml/machine-learning-databases/00240/)
 
+- PAMAP 2 Dataset
+
+A. Reiss and D. Stricker. Introducing a New Benchmarked Dataset for Activity Monitoring. The 16th IEEE International Symposium on Wearable Computers (ISWC), 2012.
+(https://www.computer.org/csdl/proceedings-article/iswc/2012/4697a108/12OmNzwZ6pa)
+
+A. Reiss and D. Stricker. Creating and Benchmarking a New Dataset for Physical Activity Monitoring. The 5th Workshop on Affect and Behaviour Related Assistance (ABRA), 2012.
+(http://archive.ics.uci.edu/ml/datasets/pamap2%20physical%20activity%20monitoring)
 
 ### 9.c. Software
 
