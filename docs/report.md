@@ -162,7 +162,7 @@ This section should cover the following items:
     <td class="tg-0pky">0.48</td>
     <td class="tg-0pky">33.27%</td>
     <td class="tg-0pky">0.35</td>
-    <td class="tg-0pky">40.42%.0</td>
+    <td class="tg-0pky">40.42%</td>
     <td class="tg-0pky">0.42</td>
   </tr>
   <tr>
