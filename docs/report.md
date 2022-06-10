@@ -169,7 +169,7 @@ This section should cover the following items:
     <td class="tg-fymr">BRITS Imputation</td>
     <td class="tg-0pky">91.17%</td>
     <td class="tg-0pky">0.94</td>
-    <td class="tg-0pky">86.62%.0</td>
+    <td class="tg-0pky">86.62%</td>
     <td class="tg-0pky">0.88</td>
     <td class="tg-0pky">89.85%</td>
     <td class="tg-0pky">0.90</td>
