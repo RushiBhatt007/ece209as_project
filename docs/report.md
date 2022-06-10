@@ -412,16 +412,16 @@ This section should cover the following items:
 <tbody>
   <tr>
     <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">25.22%</td>
+    <td class="tg-0pky">0.22</td>
+    <td class="tg-0pky">44.23%</td>
+    <td class="tg-0pky">0.46</td>
+    <td class="tg-0pky">45.64%</td>
+    <td class="tg-0pky">0.48</td>
+    <td class="tg-0lax">91.17%</td>
+    <td class="tg-0lax">0.94</td>
+    <td class="tg-0lax">92.52%</td>
+    <td class="tg-0lax">0.95</td>
   </tr>
   <tr>
     <td class="tg-fymr">20 %</td>
