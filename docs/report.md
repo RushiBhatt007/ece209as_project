@@ -402,55 +402,63 @@ This section should cover the following items:
 </thead>
 <tbody>
   <tr>
-    <td class="tg-fymr">90 %</td>
+    <td class="tg-fymr">10%</td>
     <td class="tg-0lax">91.17%</td>
     <td class="tg-0lax">0.94</td>
     <td class="tg-0lax">92.52%</td>
     <td class="tg-0lax">0.95</td>
   </tr>
   <tr>
+    <td class="tg-fymr">20%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">30%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">40%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">50%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">60%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">70%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">80%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
   </tr>
   <tr>
+    <td class="tg-fymr">90%</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
