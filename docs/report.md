@@ -292,39 +292,39 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114970</td>
+    <td class="tg-0pky">0.233541</td>
+    <td class="tg-0pky">5.45e+14</td>
+    <td class="tg-0pky">0.116230</td>
+    <td class="tg-0pky">0.233240</td>
+    <td class="tg-0pky">6.74e+00</td>
+    <td class="tg-0lax">0.114093</td>
+    <td class="tg-0lax">0.235702</td>
+    <td class="tg-0lax">5.21e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.049995</td>
+    <td class="tg-0lax">0.121676</td>
+    <td class="tg-0lax">4.34e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114846</td>
+    <td class="tg-0pky">0.233221</td>
+    <td class="tg-0pky">6.81e+14</td>
+    <td class="tg-0pky">0.116242</td>
+    <td class="tg-0pky">0.233056</td>
+    <td class="tg-0pky">6.39e+00</td>
+    <td class="tg-0lax">0.1141123</td>
+    <td class="tg-0lax">0.235713</td>
+    <td class="tg-0lax">4.9e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.058269</td>
+    <td class="tg-0lax">0.136983</td>
+    <td class="tg-0lax">5.0e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">60 %</td>
