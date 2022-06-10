@@ -176,11 +176,11 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
+    <td class="tg-0pky">92.52%</td>
     <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">88.54%</td>
     <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">90.92%</td>
     <td class="tg-0pky">0.0</td>
   </tr>
 </tbody>
