@@ -124,28 +124,22 @@ This section should cover the following items:
 <thead>
   <tr>
     <th class="tg-0pky" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">MCAR</th>
-    <th class="tg-fymr" colspan="3">MAR</th>
-    <th class="tg-fymr" colspan="3">MNAR</th>
+    <th class="tg-fymr" colspan="2">MCAR</th>
+    <th class="tg-fymr" colspan="2">MAR</th>
+    <th class="tg-fymr" colspan="2">MNAR</th>
   </tr>
   <tr>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
@@ -161,15 +155,9 @@ This section should cover the following items:
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
   </tr>
   <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
@@ -185,15 +173,9 @@ This section should cover the following items:
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
     <td class="tg-0pky">0.0</td>
