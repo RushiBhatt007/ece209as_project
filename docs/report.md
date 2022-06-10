@@ -328,75 +328,75 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114908</td>
+    <td class="tg-0pky">0.233391</td>
+    <td class="tg-0pky">8.18e+14</td>
+    <td class="tg-0pky">0.116668</td>
+    <td class="tg-0pky">0.233770</td>
+    <td class="tg-0pky">5.83e+00</td>
+    <td class="tg-0lax">0.114482</td>
+    <td class="tg-0lax">0.236468</td>
+    <td class="tg-0lax">4.71e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.061764</td>
+    <td class="tg-0lax">0.142273</td>
+    <td class="tg-0lax">5.37e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114844</td>
+    <td class="tg-0pky">0.233293</td>
+    <td class="tg-0pky">9.53e+14</td>
+    <td class="tg-0pky">0.117091</td>
+    <td class="tg-0pky">0.234323</td>
+    <td class="tg-0pky">5.31e+00</td>
+    <td class="tg-0lax">0.114992</td>
+    <td class="tg-0lax">0.237402</td>
+    <td class="tg-0lax">4.42e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.075420</td>
+    <td class="tg-0lax">0.167893</td>
+    <td class="tg-0lax">6.56e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114819</td>
+    <td class="tg-0pky">0.233297</td>
+    <td class="tg-0pky">1.09e+15</td>
+    <td class="tg-0pky">0.117917</td>
+    <td class="tg-0pky">0.235792</td>
+    <td class="tg-0pky">4.44e+0</td>
+    <td class="tg-0lax">0.115974</td>
+    <td class="tg-0lax">0.239364</td>
+    <td class="tg-0lax">3.87e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.086623</td>
+    <td class="tg-0lax">0.186676</td>
+    <td class="tg-0lax">7.54e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.114822</td>
+    <td class="tg-0pky">0.233171</td>
+    <td class="tg-0pky">1.22e+15</td>
+    <td class="tg-0pky">0.120713</td>
+    <td class="tg-0pky">0.240714</td>
+    <td class="tg-0pky">3.32e+00</td>
+    <td class="tg-0lax">0.119336</td>
+    <td class="tg-0lax">0.245459</td>
+    <td class="tg-0lax">2.97e+00</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
     <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.100667</td>
+    <td class="tg-0lax">0.209792</td>
+    <td class="tg-0lax">8.76e-01</td>
   </tr>
 </tbody>
 </table>
