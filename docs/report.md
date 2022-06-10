@@ -133,6 +133,8 @@ This section should cover the following items:
     <th class="tg-fymr">F1-Score</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
+    <th class="tg-fymr">Acc.</th>
+    <th class="tg-fymr">F1-Score</th>
   </tr>
 </thead>
 <tbody>
