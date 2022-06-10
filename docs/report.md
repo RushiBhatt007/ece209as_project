@@ -140,30 +140,30 @@ This section should cover the following items:
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">25.22%</td>
+    <td class="tg-0pky">0.22</td>
+    <td class="tg-0pky">27.84%</td>
+    <td class="tg-0pky">0.23</td>
+    <td class="tg-0pky">18.92%</td>
+    <td class="tg-0pky">0.17</td>
   </tr>
   <tr>
     <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">44.23%</td>
+    <td class="tg-0pky">0.46</td>
+    <td class="tg-0pky">38.66%</td>
+    <td class="tg-0pky">0.40</td>
+    <td class="tg-0pky">42.25%</td>
+    <td class="tg-0pky">0.45</td>
   </tr>
   <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">45.64%</td>
+    <td class="tg-0pky">0.48</td>
+    <td class="tg-0pky">33.27%</td>
+    <td class="tg-0pky">0.35</td>
+    <td class="tg-0pky">40.42%.0</td>
+    <td class="tg-0pky">0.42</td>
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
@@ -172,7 +172,7 @@ This section should cover the following items:
     <td class="tg-0pky">86.62%.0</td>
     <td class="tg-0pky">0.88</td>
     <td class="tg-0pky">89.85%</td>
-    <td class="tg-0pky">0.9</td>
+    <td class="tg-0pky">0.90</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
