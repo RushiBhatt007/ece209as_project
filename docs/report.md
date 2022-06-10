@@ -389,7 +389,6 @@ This section should cover the following items:
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-fymr" rowspan="2"></th>
     <th class="tg-1wig" colspan="2">BRITS Imputation</th>
     <th class="tg-1wig" colspan="2">SAITS Imputation</th>
   </tr>
