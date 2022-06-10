@@ -92,26 +92,26 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.071421</td>
+    <td class="tg-0pky">0.189044</td>
+    <td class="tg-0pky">1.01e+00</td>
+    <td class="tg-0pky">0.161633</td>
+    <td class="tg-0pky">0.309093</td>
+    <td class="tg-0pky">2.17e+00</td>
+    <td class="tg-0pky">0.127701</td>
+    <td class="tg-0pky">0.243318</td>
+    <td class="tg-0pky">2.89e+00</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
     <td class="tg-0pky">0.025206</td>
     <td class="tg-0pky">0.068027</td>
     <td class="tg-0pky">2.19e-01</td>
-    <td class="tg-0pky">0.164979</td>
-    <td class="tg-0pky">0.308052</td>
+    <td class="tg-0pky">0.059130</td>
+    <td class="tg-0pky">0.289041</td>
     <td class="tg-0pky">1.00e+00</td>
-    <td class="tg-0pky">0.142454</td>
-    <td class="tg-0pky">0.268954</td>
+    <td class="tg-0pky">0.431289</td>
+    <td class="tg-0pky">0.134634</td>
     <td class="tg-0pky">1.03e+00</td>
   </tr>
 </tbody>
@@ -247,9 +247,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.113634</td>
     <td class="tg-0lax">0.234785</td>
     <td class="tg-0lax">5.55e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.071421</td>
+    <td class="tg-0lax">0.189044</td>
+    <td class="tg-0lax">1.01e+00</td>
     <td class="tg-0lax">0.025206</td>
     <td class="tg-0lax">0.078027</td>
     <td class="tg-0lax">2.19e-01</td>
@@ -265,9 +265,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.113686</td>
     <td class="tg-0lax">0.234810</td>
     <td class="tg-0lax">5.45e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.103246</td>
+    <td class="tg-0lax">0.184325</td>
+    <td class="tg-0lax">9.57e-01</td>
     <td class="tg-0lax">0.039735</td>
     <td class="tg-0lax">0.099199</td>
     <td class="tg-0lax">3.46e-01</td>
@@ -283,9 +283,9 @@ This section should cover the following items:
     <td class="tg-0pky">0.113850</td>
     <td class="tg-0pky">0.235246</td>
     <td class="tg-0pky">5.35e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.095643</td>
+    <td class="tg-0lax">0.186893</td>
+    <td class="tg-0lax">9.97e-01</td>
     <td class="tg-0lax">0.043035</td>
     <td class="tg-0lax">0.107692</td>
     <td class="tg-0lax">3.74e-01</td>
@@ -301,9 +301,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.114093</td>
     <td class="tg-0lax">0.235702</td>
     <td class="tg-0lax">5.21e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.113654</td>
+    <td class="tg-0lax">0.189329</td>
+    <td class="tg-0lax">9.99e-01</td>
     <td class="tg-0lax">0.049995</td>
     <td class="tg-0lax">0.121676</td>
     <td class="tg-0lax">4.34e-01</td>
@@ -319,9 +319,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.1141123</td>
     <td class="tg-0lax">0.235713</td>
     <td class="tg-0lax">4.9e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.113654</td>
+    <td class="tg-0lax">0.19139</td>
+    <td class="tg-0lax">1.10e00</td>
     <td class="tg-0lax">0.058269</td>
     <td class="tg-0lax">0.136983</td>
     <td class="tg-0lax">5.0e-01</td>
@@ -337,9 +337,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.114482</td>
     <td class="tg-0lax">0.236468</td>
     <td class="tg-0lax">4.71e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.115624</td>
+    <td class="tg-0lax">0.198277</td>
+    <td class="tg-0lax">1.13e+01</td>
     <td class="tg-0lax">0.061764</td>
     <td class="tg-0lax">0.142273</td>
     <td class="tg-0lax">5.37e-01</td>
@@ -355,9 +355,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.114992</td>
     <td class="tg-0lax">0.237402</td>
     <td class="tg-0lax">4.42e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.115988</td>
+    <td class="tg-0lax">0.199835</td>
+    <td class="tg-0lax">1.23e+00</td>
     <td class="tg-0lax">0.075420</td>
     <td class="tg-0lax">0.167893</td>
     <td class="tg-0lax">6.56e-01</td>
@@ -373,9 +373,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.115974</td>
     <td class="tg-0lax">0.239364</td>
     <td class="tg-0lax">3.87e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.118903</td>
+    <td class="tg-0lax">0.21341</td>
+    <td class="tg-0lax">1.83e+00</td>
     <td class="tg-0lax">0.086623</td>
     <td class="tg-0lax">0.186676</td>
     <td class="tg-0lax">7.54e-01</td>
@@ -391,9 +391,9 @@ This section should cover the following items:
     <td class="tg-0lax">0.119336</td>
     <td class="tg-0lax">0.245459</td>
     <td class="tg-0lax">2.97e+00</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0lax">0.123216</td>
+    <td class="tg-0lax">0.23548</td>
+    <td class="tg-0lax">2.13e+00</td>
     <td class="tg-0lax">0.100667</td>
     <td class="tg-0lax">0.209792</td>
     <td class="tg-0lax">8.76e-01</td>
@@ -661,15 +661,15 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">10.514203</td>
+    <td class="tg-0pky">89.759356</td>
+    <td class="tg-0pky">0.351535</td>
+    <td class="tg-0pky">37.548802</td>
+    <td class="tg-0pky">389.854345</td>
+    <td class="tg-0pky">0.789765</td>
+    <td class="tg-0pky">39.749156</td>
+    <td class="tg-0pky">319.851974</td>
+    <td class="tg-0pky">1.00e+00</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
