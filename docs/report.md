@@ -110,7 +110,7 @@ This section should cover the following items:
     <td class="tg-0pky">0.059130</td>
     <td class="tg-0pky">0.289041</td>
     <td class="tg-0pky">1.00e+00</td>
-    <td class="tg-0pky">0.431289</td>
+    <td class="tg-0pky">0.043189</td>
     <td class="tg-0pky">0.134634</td>
     <td class="tg-0pky">1.03e+00</td>
   </tr>
