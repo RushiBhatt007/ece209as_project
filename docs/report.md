@@ -44,13 +44,13 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
   </tr>
 </thead>
 <tbody>
@@ -202,19 +202,19 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
   </tr>
 </thead>
 <tbody>
@@ -482,13 +482,13 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
   </tr>
 </thead>
 <tbody>
