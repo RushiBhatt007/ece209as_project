@@ -79,44 +79,41 @@ def MAR_mask(
     """
 
     n, d, z = X.shape
+    p = min(1,2*p)
+    new_mask = []
 
-    mask = np.zeros((n, d)).astype(bool)
+    for i in range(z):
 
-    d_obs = max(
-        int(p_obs * d), 1
-    )  # number of variables that will have no missing values (at least one variable)
-    d_na = d - d_obs  # number of variables that will have missing values
+        mask = np.zeros((n, d)).astype(bool)
+        d_obs = max(
+            int(p_obs * d), 1
+        )  # number of variables that will have no missing values (at least one variable)
+        d_na = d - d_obs  # number of variables that will have missing values
 
-    # Sample variables that will all be observed, and those with missing values:
-    if sample_columns:
-        idxs_obs = np.random.choice(d, d_obs, replace=False)
-    else:
-        idxs_obs = list(range(d_obs))
+        # Sample variables that will all be observed, and those with missing values:
+        if sample_columns:
+            idxs_obs = np.random.choice(d, d_obs, replace=False)
+        else:
+            idxs_obs = list(range(d_obs))
 
-    idxs_nas = np.array([i for i in range(d) if i not in idxs_obs])
+        idxs_nas = np.array([i for i in range(d) if i not in idxs_obs])
 
-    # Other variables will have NA proportions that depend on those observed variables, through a logistic model
-    # The parameters of this logistic model are random.
+        # Other variables will have NA proportions that depend on those observed variables, through a logistic model
+        # The parameters of this logistic model are random.
 
-    # Pick coefficients so that W^Tx has unit variance (avoids shrinking)
-    X_temp = X[:,:,0]
-    coeffs = pick_coeffs(X_temp, idxs_obs, idxs_nas)
-    # Pick the intercepts to have a desired amount of missing values
-    intercepts = fit_intercepts(X_temp[:, idxs_obs], coeffs, p)
+        # Pick coefficients so that W^Tx has unit variance (avoids shrinking)
+        X_temp = X[:,:,i]
+        coeffs = pick_coeffs(X_temp, idxs_obs, idxs_nas)
+        # Pick the intercepts to have a desired amount of missing values
+        intercepts = fit_intercepts(X_temp[:, idxs_obs], coeffs, p)
 
-    ps = expit(X_temp[:, idxs_obs] @ coeffs + intercepts)
+        ps = expit(X_temp[:, idxs_obs] @ coeffs + intercepts)
 
-    ber = np.random.rand(n, d_na)
-    mask[:, idxs_nas] = ber < ps
-
-    new_mask = np.zeros((n, d, z)).astype(bool)
-
-    for i in range(n):
-        for j in range(d):
-            if(mask[i,j]):
-                new_mask[i,j,:] = True
-            else:
-                new_mask[i,j,:] = False
+        ber = np.random.rand(n, d_na)
+        mask[:, idxs_nas] = ber < ps
+        new_mask.append(mask)
+    
+    new_mask = np.array(new_mask, dtype = bool).reshape((n,d,z))
     return new_mask
 
 
@@ -145,54 +142,51 @@ def MNAR_mask_logistic(
 
     n, d, z = X.shape
 
-    mask = np.zeros((n, d)).astype(bool)
+    new_mask = []
+    for i in range(z):
+        mask = np.zeros((n, d)).astype(bool)
 
-    d_params = (
-        max(int(p_params * d), 1) if exclude_inputs else d
-    )  # number of variables used as inputs (at least 1)
-    d_na = (
-        d - d_params if exclude_inputs else d
-    )  # number of variables masked with the logistic model
+        d_params = (
+            max(int(p_params * d), 1) if exclude_inputs else d
+        )  # number of variables used as inputs (at least 1)
+        d_na = (
+            d - d_params if exclude_inputs else d
+        )  # number of variables masked with the logistic model
 
-    # Sample variables that will be parameters for the logistic regression:
-    idxs_params = (
-        np.random.choice(d, d_params, replace=False) if exclude_inputs else np.arange(d)
-    )
-    idxs_nas = (
-        np.array([i for i in range(d) if i not in idxs_params])
-        if exclude_inputs
-        else np.arange(d)
-    )
+        # Sample variables that will be parameters for the logistic regression:
+        idxs_params = (
+            np.random.choice(d, d_params, replace=False) if exclude_inputs else np.arange(d)
+        )
+        idxs_nas = (
+            np.array([i for i in range(d) if i not in idxs_params])
+            if exclude_inputs
+            else np.arange(d)
+        )
 
-    # Other variables will have NA proportions selected by a logistic model
-    # The parameters of this logistic model are random.
+        # Other variables will have NA proportions selected by a logistic model
+        # The parameters of this logistic model are random.
 
-    X_temp = X[:,:,0]
-    # Pick coefficients so that W^Tx has unit variance (avoids shrinking)
-    coeffs = pick_coeffs(X_temp, idxs_params, idxs_nas)
-    # Pick the intercepts to have a desired amount of missing values
-    intercepts = fit_intercepts(X_temp[:, idxs_params], coeffs, p)
+        X_temp = X[:,:,0]
+        # Pick coefficients so that W^Tx has unit variance (avoids shrinking)
+        coeffs = pick_coeffs(X_temp, idxs_params, idxs_nas)
+        # Pick the intercepts to have a desired amount of missing values
+        intercepts = fit_intercepts(X_temp[:, idxs_params], coeffs, p)
 
-    ps = expit(X_temp[:, idxs_params] @ coeffs + intercepts)
+        ps = expit(X_temp[:, idxs_params] @ coeffs + intercepts)
 
-    ber = np.random.rand(n, d_na)
-    mask[:, idxs_nas] = ber < ps
+        ber = np.random.rand(n, d_na)
+        mask[:, idxs_nas] = ber < ps
 
-    # If the inputs of the logistic model are excluded from MNAR missingness,
-    # mask some values used in the logistic model at random.
-    # This makes the missingness of other variables potentially dependent on masked values
+        # If the inputs of the logistic model are excluded from MNAR missingness,
+        # mask some values used in the logistic model at random.
+        # This makes the missingness of other variables potentially dependent on masked values
 
-    if exclude_inputs:
-        mask[:, idxs_params] = np.random.rand(n, d_params) < p
+        if exclude_inputs:
+            mask[:, idxs_params] = np.random.rand(n, d_params) < p
+        new_mask.append(mask)
 
-    new_mask = np.zeros((n, d, z)).astype(bool)
 
-    for i in range(n):
-        for j in range(d):
-            if(mask[i,j]):
-                new_mask[i,j,:] = True
-            else:
-                new_mask[i,j,:] = False
+    new_mask = np.array(new_mask, dtype = bool).reshape((n,d,z))
     return new_mask
 
 
