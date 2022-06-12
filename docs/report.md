@@ -44,13 +44,13 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
   </tr>
 </thead>
 <tbody>
@@ -92,26 +92,26 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">0.071421</td>
+    <td class="tg-0pky">0.189044</td>
+    <td class="tg-0pky">1.01e+00</td>
+    <td class="tg-0pky">0.161633</td>
+    <td class="tg-0pky">0.309093</td>
+    <td class="tg-0pky">2.17e+00</td>
+    <td class="tg-0pky">0.127701</td>
+    <td class="tg-0pky">0.243318</td>
+    <td class="tg-0pky">2.89e+00</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
     <td class="tg-0pky">0.025206</td>
     <td class="tg-0pky">0.068027</td>
     <td class="tg-0pky">2.19e-01</td>
-    <td class="tg-0pky">0.164979</td>
-    <td class="tg-0pky">0.308052</td>
+    <td class="tg-0pky">0.059130</td>
+    <td class="tg-0pky">0.289041</td>
     <td class="tg-0pky">1.00e+00</td>
-    <td class="tg-0pky">0.142454</td>
-    <td class="tg-0pky">0.268954</td>
+    <td class="tg-0pky">0.043189</td>
+    <td class="tg-0pky">0.134634</td>
     <td class="tg-0pky">1.03e+00</td>
   </tr>
 </tbody>
@@ -124,82 +124,64 @@ This section should cover the following items:
 <thead>
   <tr>
     <th class="tg-0pky" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">MCAR</th>
-    <th class="tg-fymr" colspan="3">MAR</th>
-    <th class="tg-fymr" colspan="3">MNAR</th>
+    <th class="tg-fymr" colspan="2">MCAR</th>
+    <th class="tg-fymr" colspan="2">MAR</th>
+    <th class="tg-fymr" colspan="2">MNAR</th>
   </tr>
   <tr>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">25.22%</td>
+    <td class="tg-0pky">0.22</td>
+    <td class="tg-0pky">27.84%</td>
+    <td class="tg-0pky">0.23</td>
+    <td class="tg-0pky">18.92%</td>
+    <td class="tg-0pky">0.17</td>
   </tr>
   <tr>
     <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">44.23%</td>
+    <td class="tg-0pky">0.46</td>
+    <td class="tg-0pky">38.66%</td>
+    <td class="tg-0pky">0.40</td>
+    <td class="tg-0pky">42.25%</td>
+    <td class="tg-0pky">0.45</td>
   </tr>
   <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">45.64%</td>
+    <td class="tg-0pky">0.48</td>
+    <td class="tg-0pky">33.27%</td>
+    <td class="tg-0pky">0.35</td>
+    <td class="tg-0pky">40.42%</td>
+    <td class="tg-0pky">0.42</td>
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">91.17%</td>
+    <td class="tg-0pky">0.94</td>
+    <td class="tg-0pky">86.62%</td>
+    <td class="tg-0pky">0.88</td>
+    <td class="tg-0pky">89.85%</td>
+    <td class="tg-0pky">0.90</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">92.52%</td>
+    <td class="tg-0pky">0.95</td>
+    <td class="tg-0pky">88.54%</td>
+    <td class="tg-0pky">0.91</td>
+    <td class="tg-0pky">90.92%</td>
+    <td class="tg-0pky">0.93</td>
   </tr>
 </tbody>
 </table>
@@ -220,183 +202,183 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
     <th class="tg-1wig">MAE</th>
     <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
+    <th class="tg-1wig">MRE</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114886</td>
+    <td class="tg-0pky">0.233225</td>
+    <td class="tg-0pky">1.36e+14</td>
+    <td class="tg-0pky">0.115776</td>
+    <td class="tg-0pky">0.232347</td>
+    <td class="tg-0pky">7.88e+00</td>
+    <td class="tg-0lax">0.113634</td>
+    <td class="tg-0lax">0.234785</td>
+    <td class="tg-0lax">5.55e+00</td>
+    <td class="tg-0lax">0.071421</td>
+    <td class="tg-0lax">0.189044</td>
+    <td class="tg-0lax">1.01e+00</td>
+    <td class="tg-0lax">0.025206</td>
+    <td class="tg-0lax">0.078027</td>
+    <td class="tg-0lax">2.19e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">20 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114861</td>
+    <td class="tg-0pky">0.233171</td>
+    <td class="tg-0pky">2.72e+14</td>
+    <td class="tg-0pky">0.115862</td>
+    <td class="tg-0pky">0.232386</td>
+    <td class="tg-0pky">7.52e+00</td>
+    <td class="tg-0lax">0.113686</td>
+    <td class="tg-0lax">0.234810</td>
+    <td class="tg-0lax">5.45e+00</td>
+    <td class="tg-0lax">0.103246</td>
+    <td class="tg-0lax">0.184325</td>
+    <td class="tg-0lax">9.57e-01</td>
+    <td class="tg-0lax">0.039735</td>
+    <td class="tg-0lax">0.099199</td>
+    <td class="tg-0lax">3.46e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">30 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114897</td>
+    <td class="tg-0pky">0.233380</td>
+    <td class="tg-0pky">4.09e+14</td>
+    <td class="tg-0lax">0.116015</td>
+    <td class="tg-0lax">0.232767</td>
+    <td class="tg-0lax">7.11e+00</td>
+    <td class="tg-0pky">0.113850</td>
+    <td class="tg-0pky">0.235246</td>
+    <td class="tg-0pky">5.35e+00</td>
+    <td class="tg-0lax">0.095643</td>
+    <td class="tg-0lax">0.186893</td>
+    <td class="tg-0lax">9.97e-01</td>
+    <td class="tg-0lax">0.043035</td>
+    <td class="tg-0lax">0.107692</td>
+    <td class="tg-0lax">3.74e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114970</td>
+    <td class="tg-0pky">0.233541</td>
+    <td class="tg-0pky">5.45e+14</td>
+    <td class="tg-0pky">0.116230</td>
+    <td class="tg-0pky">0.233240</td>
+    <td class="tg-0pky">6.74e+00</td>
+    <td class="tg-0lax">0.114093</td>
+    <td class="tg-0lax">0.235702</td>
+    <td class="tg-0lax">5.21e+00</td>
+    <td class="tg-0lax">0.113654</td>
+    <td class="tg-0lax">0.189329</td>
+    <td class="tg-0lax">9.99e-01</td>
+    <td class="tg-0lax">0.049995</td>
+    <td class="tg-0lax">0.121676</td>
+    <td class="tg-0lax">4.34e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114846</td>
+    <td class="tg-0pky">0.233221</td>
+    <td class="tg-0pky">6.81e+14</td>
+    <td class="tg-0pky">0.116242</td>
+    <td class="tg-0pky">0.233056</td>
+    <td class="tg-0pky">6.39e+00</td>
+    <td class="tg-0lax">0.1141123</td>
+    <td class="tg-0lax">0.235713</td>
+    <td class="tg-0lax">4.9e+00</td>
+    <td class="tg-0lax">0.113654</td>
+    <td class="tg-0lax">0.19139</td>
+    <td class="tg-0lax">1.10e00</td>
+    <td class="tg-0lax">0.058269</td>
+    <td class="tg-0lax">0.136983</td>
+    <td class="tg-0lax">5.0e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114908</td>
+    <td class="tg-0pky">0.233391</td>
+    <td class="tg-0pky">8.18e+14</td>
+    <td class="tg-0pky">0.116668</td>
+    <td class="tg-0pky">0.233770</td>
+    <td class="tg-0pky">5.83e+00</td>
+    <td class="tg-0lax">0.114482</td>
+    <td class="tg-0lax">0.236468</td>
+    <td class="tg-0lax">4.71e+00</td>
+    <td class="tg-0lax">0.115624</td>
+    <td class="tg-0lax">0.198277</td>
+    <td class="tg-0lax">1.13e+01</td>
+    <td class="tg-0lax">0.061764</td>
+    <td class="tg-0lax">0.142273</td>
+    <td class="tg-0lax">5.37e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114844</td>
+    <td class="tg-0pky">0.233293</td>
+    <td class="tg-0pky">9.53e+14</td>
+    <td class="tg-0pky">0.117091</td>
+    <td class="tg-0pky">0.234323</td>
+    <td class="tg-0pky">5.31e+00</td>
+    <td class="tg-0lax">0.114992</td>
+    <td class="tg-0lax">0.237402</td>
+    <td class="tg-0lax">4.42e+00</td>
+    <td class="tg-0lax">0.115988</td>
+    <td class="tg-0lax">0.199835</td>
+    <td class="tg-0lax">1.23e+00</td>
+    <td class="tg-0lax">0.075420</td>
+    <td class="tg-0lax">0.167893</td>
+    <td class="tg-0lax">6.56e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114819</td>
+    <td class="tg-0pky">0.233297</td>
+    <td class="tg-0pky">1.09e+15</td>
+    <td class="tg-0pky">0.117917</td>
+    <td class="tg-0pky">0.235792</td>
+    <td class="tg-0pky">4.44e+0</td>
+    <td class="tg-0lax">0.115974</td>
+    <td class="tg-0lax">0.239364</td>
+    <td class="tg-0lax">3.87e+00</td>
+    <td class="tg-0lax">0.118903</td>
+    <td class="tg-0lax">0.21341</td>
+    <td class="tg-0lax">1.83e+00</td>
+    <td class="tg-0lax">0.086623</td>
+    <td class="tg-0lax">0.186676</td>
+    <td class="tg-0lax">7.54e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">0.114822</td>
+    <td class="tg-0pky">0.233171</td>
+    <td class="tg-0pky">1.22e+15</td>
+    <td class="tg-0pky">0.120713</td>
+    <td class="tg-0pky">0.240714</td>
+    <td class="tg-0pky">3.32e+00</td>
+    <td class="tg-0lax">0.119336</td>
+    <td class="tg-0lax">0.245459</td>
+    <td class="tg-0lax">2.97e+00</td>
+    <td class="tg-0lax">0.123216</td>
+    <td class="tg-0lax">0.23548</td>
+    <td class="tg-0lax">2.13e+00</td>
+    <td class="tg-0lax">0.100667</td>
+    <td class="tg-0lax">0.209792</td>
+    <td class="tg-0lax">8.76e-01</td>
   </tr>
 </tbody>
 </table>
@@ -408,192 +390,79 @@ This section should cover the following items:
 <thead>
   <tr>
     <th class="tg-fymr" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">Zero Imputation</th>
-    <th class="tg-fymr" colspan="3">Mean Imputation</th>
-    <th class="tg-1wig" colspan="3">Median Imputation</th>
-    <th class="tg-1wig" colspan="3">BRITS Imputation</th>
-    <th class="tg-1wig" colspan="3">SAITS Imputation</th>
+    <th class="tg-1wig" colspan="2">BRITS Imputation</th>
+    <th class="tg-1wig" colspan="2">SAITS Imputation</th>
   </tr>
   <tr>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-1wig">Acc.</th>
     <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
     <th class="tg-1wig">Acc.</th>
     <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
-    <th class="tg-1wig">Acc.</th>
-    <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">10%</td>
+    <td class="tg-0lax">91.17%</td>
+    <td class="tg-0lax">0.94</td>
+    <td class="tg-0lax">92.52%</td>
+    <td class="tg-0lax">0.95</td>
   </tr>
   <tr>
-    <td class="tg-fymr">20 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">20%</td>
+    <td class="tg-0lax">90.73%</td>
+    <td class="tg-0lax">0.92</td>
+    <td class="tg-0lax">91.65%</td>
+    <td class="tg-0lax">0.94</td>
   </tr>
   <tr>
-    <td class="tg-fymr">30 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">30%</td>
+    <td class="tg-0lax">82.62%</td>
+    <td class="tg-0lax">0.81</td>
+    <td class="tg-0lax">86.67%</td>
+    <td class="tg-0lax">0.87</td>
   </tr>
   <tr>
-    <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">40%</td>
+    <td class="tg-0lax">76.86%</td>
+    <td class="tg-0lax">0.74</td>
+    <td class="tg-0lax">81.37%</td>
+    <td class="tg-0lax">0.79</td>
   </tr>
   <tr>
-    <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">50%</td>
+    <td class="tg-0lax">68.43%</td>
+    <td class="tg-0lax">0.66</td>
+    <td class="tg-0lax">74.27%</td>
+    <td class="tg-0lax">0.75</td>
   </tr>
   <tr>
-    <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">60%</td>
+    <td class="tg-0lax">59.14%</td>
+    <td class="tg-0lax">0.56</td>
+    <td class="tg-0lax">67.23%</td>
+    <td class="tg-0lax">0.65</td>
   </tr>
   <tr>
-    <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">70%</td>
+    <td class="tg-0lax">48.22%</td>
+    <td class="tg-0lax">0.46</td>
+    <td class="tg-0lax">56.21%</td>
+    <td class="tg-0lax">0.55</td>
   </tr>
   <tr>
-    <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">80%</td>
+    <td class="tg-0lax">43.86%</td>
+    <td class="tg-0lax">0.39</td>
+    <td class="tg-0lax">50.49%</td>
+    <td class="tg-0lax">0.48</td>
   </tr>
   <tr>
-    <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">90%</td>
+    <td class="tg-0lax">39.45%</td>
+    <td class="tg-0lax">0.37</td>
+    <td class="tg-0lax">45.68%</td>
+    <td class="tg-0lax">0.43</td>
   </tr>
 </tbody>
 </table>
@@ -613,13 +482,13 @@ This section should cover the following items:
   <tr>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
     <th class="tg-fymr">MAE</th>
     <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
+    <th class="tg-fymr">MRE</th>
   </tr>
 </thead>
 <tbody>
@@ -661,15 +530,15 @@ This section should cover the following items:
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">10.514203</td>
+    <td class="tg-0pky">89.759356</td>
+    <td class="tg-0pky">0.351535</td>
+    <td class="tg-0pky">37.548802</td>
+    <td class="tg-0pky">389.854345</td>
+    <td class="tg-0pky">0.789765</td>
+    <td class="tg-0pky">39.749156</td>
+    <td class="tg-0pky">319.851974</td>
+    <td class="tg-0pky">1.00e+00</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
@@ -693,279 +562,64 @@ This section should cover the following items:
 <thead>
   <tr>
     <th class="tg-0pky" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">MCAR</th>
-    <th class="tg-fymr" colspan="3">MAR</th>
-    <th class="tg-fymr" colspan="3">MNAR</th>
+    <th class="tg-fymr" colspan="2">MCAR</th>
+    <th class="tg-fymr" colspan="2">MAR</th>
+    <th class="tg-fymr" colspan="2">MNAR</th>
   </tr>
   <tr>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-fymr">Acc.</th>
     <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">23.14%</td>
+    <td class="tg-0pky">0.21</td>
+    <td class="tg-0pky">24.74%</td>
+    <td class="tg-0pky">0.23</td>
+    <td class="tg-0pky">19.02%</td>
+    <td class="tg-0pky">0.19</td>
   </tr>
   <tr>
     <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">41.32%</td>
+    <td class="tg-0pky">0.44</td>
+    <td class="tg-0pky">36.60%</td>
+    <td class="tg-0pky">0.37</td>
+    <td class="tg-0pky">43.98%</td>
+    <td class="tg-0pky">0.47</td>
   </tr>
   <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">43.42%</td>
+    <td class="tg-0pky">0.44</td>
+    <td class="tg-0pky">38.71%</td>
+    <td class="tg-0pky">0.39</td>
+    <td class="tg-0pky">39.72%</td>
+    <td class="tg-0pky">0.42</td>
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
+    <td class="tg-0pky">88.79%</td>
+    <td class="tg-0pky">0.91</td>
+    <td class="tg-0pky">87.63%</td>
+    <td class="tg-0pky">0.89</td>
+    <td class="tg-0pky">88.69%</td>
+    <td class="tg-0pky">0.90</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-  </tr>
-</tbody>
-</table>
-
-
-### Imputation performance over varying missingness rate
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-fymr" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">Zero Imputation</th>
-    <th class="tg-fymr" colspan="3">Mean Imputation</th>
-    <th class="tg-1wig" colspan="3">Median Imputation</th>
-    <th class="tg-1wig" colspan="3">BRITS Imputation</th>
-    <th class="tg-1wig" colspan="3">SAITS Imputation</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">MAE</th>
-    <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
-    <th class="tg-fymr">MAE</th>
-    <th class="tg-fymr">RMSE</th>
-    <th class="tg-fymr">MAR</th>
-    <th class="tg-1wig">MAE</th>
-    <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
-    <th class="tg-1wig">MAE</th>
-    <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
-    <th class="tg-1wig">MAE</th>
-    <th class="tg-1wig">RMSE</th>
-    <th class="tg-1wig">MAR</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">20 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">30 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-0pky">91.41%</td>
+    <td class="tg-0pky">0.94</td>
+    <td class="tg-0pky">89.32%</td>
+    <td class="tg-0pky">0.90</td>
+    <td class="tg-0pky">88.92%</td>
+    <td class="tg-0pky">0.91</td>
   </tr>
 </tbody>
 </table>
@@ -977,192 +631,79 @@ This section should cover the following items:
 <thead>
   <tr>
     <th class="tg-fymr" rowspan="2"></th>
-    <th class="tg-fymr" colspan="3">Zero Imputation</th>
-    <th class="tg-fymr" colspan="3">Mean Imputation</th>
-    <th class="tg-1wig" colspan="3">Median Imputation</th>
-    <th class="tg-1wig" colspan="3">BRITS Imputation</th>
-    <th class="tg-1wig" colspan="3">SAITS Imputation</th>
+    <th class="tg-1wig" colspan="2">BRITS Imputation</th>
+    <th class="tg-1wig" colspan="2">SAITS Imputation</th>
   </tr>
   <tr>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">AU-ROC</th>
     <th class="tg-1wig">Acc.</th>
     <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
     <th class="tg-1wig">Acc.</th>
     <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
-    <th class="tg-1wig">Acc.</th>
-    <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">AU-ROC</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">10%</td>
+    <td class="tg-0lax">88.79%</td>
+    <td class="tg-0lax">0.91</td>
+    <td class="tg-0lax">91.41%</td>
+    <td class="tg-0lax">0.94</td>
   </tr>
   <tr>
-    <td class="tg-fymr">20 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">20%</td>
+    <td class="tg-0lax">86.63%</td>
+    <td class="tg-0lax">0.89</td>
+    <td class="tg-0lax">85.77%</td>
+    <td class="tg-0lax">0.86</td>
   </tr>
   <tr>
-    <td class="tg-fymr">30 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">30%</td>
+    <td class="tg-0lax">85.23%</td>
+    <td class="tg-0lax">0.88</td>
+    <td class="tg-0lax">83.71%</td>
+    <td class="tg-0lax">0.86</td>
   </tr>
   <tr>
-    <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">40%</td>
+    <td class="tg-0lax">78.65%</td>
+    <td class="tg-0lax">0.79</td>
+    <td class="tg-0lax">79.37%</td>
+    <td class="tg-0lax">0.79</td>
   </tr>
   <tr>
-    <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">50%</td>
+    <td class="tg-0lax">64.89%</td>
+    <td class="tg-0lax">0.64</td>
+    <td class="tg-0lax">73.19%</td>
+    <td class="tg-0lax">0.73</td>
   </tr>
   <tr>
-    <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">60%</td>
+    <td class="tg-0lax">59.11%</td>
+    <td class="tg-0lax">0.59</td>
+    <td class="tg-0lax">64.31%</td>
+    <td class="tg-0lax">0.65</td>
   </tr>
   <tr>
-    <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">70%</td>
+    <td class="tg-0lax">48.33%</td>
+    <td class="tg-0lax">0.49</td>
+    <td class="tg-0lax">58.33%</td>
+    <td class="tg-0lax">0.57</td>
   </tr>
   <tr>
-    <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">80%</td>
+    <td class="tg-0lax">40.69%</td>
+    <td class="tg-0lax">0.41</td>
+    <td class="tg-0lax">49.74%</td>
+    <td class="tg-0lax">0.50</td>
   </tr>
   <tr>
-    <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0pky">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
-    <td class="tg-0lax">0.0</td>
+    <td class="tg-fymr">90%</td>
+    <td class="tg-0lax">36.30%</td>
+    <td class="tg-0lax">0.37</td>
+    <td class="tg-0lax">48.98%</td>
+    <td class="tg-0lax">0.49</td>
   </tr>
 </tbody>
 </table>
