@@ -49,20 +49,78 @@ Following are the potential impact that our work can make:
 We will be using two sets of evaluation metrics to determine the success of our research work. 
 
 Metrics for imputation performance: 
-* MAE (Mean Absolute Error)
-* RMSE (Root Mean Square Error)
-* MRE (Mean Relative Error) 
+* **MAE** (Mean Absolute Error)
+* **RMSE** (Root Mean Square Error)
+* **MRE** (Mean Relative Error) 
 
 Metrics for classification performance: 
-* Accuracy (percentage of correct predictions)
-* F1-Score (to take into account class distribution)
+* **Accuracy** (percentage of correct predictions)
+* **F1-Score** (to take into account class distribution)
 
 We will be evaluating these parameters for three missingness types, namely: MCAR, MAR, and MNAR, with varying missingness rates from 10 % to 90 % for all five imputation models. 
 
 
 # 2. Related Work
 
+## 2.1 Papers
+A brief summary of the research work mentioned in earlier sections can be found here. There are numerous publications at top conferences which focus on data imputation using architectures based on RNNs/GANs/VAEs/Self-attention.
+
+* **SAITS**: A novel method based on the self-attention mechanism for missing value imputation in multivariate time series.
+* **BRITS**: Bidirectional RNN-based method directly learns the missing values in a bidirectional recurrent dynamical system, without any specific assumption.
+* **GAN**: Learn the overall distribution of a multivariate time series dataset with GAN, which is further used to generate the missing values for each sample.
+* **M-RNN**: A Multi-directional Recurrent Neural Network (M-RNN). The main difference of An M-RNN between a bi-directional RNN is that it sequentially operates across streams.
+* **NAOMI**: A non-autoregressive approach and proposes a novel deep generative model: Non-AutOregressive Multiresolution Imputation (NAOMI) to impute long-range sequences given arbitrary missing patterns.
+* **E2GAN**: An end-to-end generative model E²GAN to impute missing values in multivariate time series. With the help of the discriminative loss and the squared error loss, E²GAN can impute the incomplete time series by the nearest generated complete time series at one stage.
+
+
+## 2.2 Dataset
+* **UCI HAR Dataset**:
+  * 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+  * 128 readings/ window (~10k time series)
+  * 3-axis accelerometer and 3-axis gyroscope
+* **PAMAP 2 Dataset**:
+  * 24 activities
+  * 52 features
+    * Heart Beat
+    * IMU hand (2 x 3-axis accelo, 3-axis gyro, 3-axis magneto, orientation)
+    * IMU chest
+    * IMU ankle
+  * We found window size of 40, as best for imputation and classification performance
+
+## 2.3 Software
+* Python >= 3.9
+* Packages: PyPots, TSDB, PyTorch, Matplotlib, Pandas, Scipy, Numpy, Scikit Learn
+
 # 3. Technical Approach
+
+## 3.1 Data Missingness
+
+### 3.1.1 Types of data missingness:
+* Missing completely at random (MCAR), missing values are independent of any other values
+* Missing at random (MAR), missing values depend only on observed values
+  * E.g., missingness rate for walking is higher than that for standing?
+  * E.g., missingness rate for sensor X is higher than sensor Y?
+* Missing not at random (MNAR), missing values depend on both observed and unobserved values
+  * E.g., if you run very fast (more acceleration), missingness is likely to be higher than normal run
+
+### 3.1.2 Synthetically introducing MCAR, MAR, and MNAR
+
+* **MCAR**: Generates missingness completely at random based on a given missingness rate ‘p’
+* **MAR** (with logistic masking model): First, a subset of variables with no missing values is randomly selected. The remaining variables have missing values according to a logistic model with random weights, re-scaled so as to attain the desired proportion of missing values on those variables.
+* **MNAR** (with logistic masking model): It is implemented by selecting missingness probabilities with a logistic model, taking all variables as inputs. Hence, values that are inputs can also be missing.
+
+## 3.2 Imputation Models
+
+### 3.2.1 Baseline Models
+* **Zero imputation** - Filling the missing data directly with 0.
+* **Mean imputation** - Filling the missing data with mean of the values in the window.
+* **Median imputation** - Filling the missing data with median of the values in the window. 
+
+### 3.2.2 BRITS
+
+### 3.2.3 SAITS
+
+## 3.3 Classification Models
 
 # 4. Evaluation and Results
 
@@ -747,5 +805,17 @@ We will be evaluating these parameters for three missingness types, namely: MCAR
 
 
 # 5. Discussion and Conclusions
+## 5.1 Conclusion
+From our evaluations, we conclude the following:
+* SAITS **outperforms** BRITS by ~ 31% in MAE and achieves 2 ∼ 3 times faster training speed. Furthermore, SAITS outperforms baseline imputation approaches by ~ 400% in MAE.
+* SAITS is **robust** to different types of missingness - namely tested on MCAR, MAR, and MNAR with varying missingness rate  
+* SAITS is **multiutility** - it not only outperforms other methods on imputation metrics but also does well on downstream task of HAR classification. 
+* SAITS **generalizes** well as we have tested it on two popular - UCI HAR and PAMAPS2 dataset.
+
+## 5.2 Future Work
+* Our best classifier (CNN-based) on SAIT imputed data achieved ~92.5 % for UCI HAR, and ~91 % for PAMAPS2 (with 10% MCAR); however their existing SOTA models have achieved ~98 %  test accuracy. Therefore we see a new direction of future research in experimenting with SOTA/building better classifiers.
+* IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized to improve the performance of the above mentioned tasks.
+
+
 
 # 6. References
