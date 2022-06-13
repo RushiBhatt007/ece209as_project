@@ -19,10 +19,25 @@ Human Activity Recognition (HAR) is the process of automatically inferring a use
 
 ## 1.2 State of the Art & Its Limitations : How is it done today, and what are the limits of current practice?
 
+### 1.2.1 Current State of the Art (SOTA)
+* **RNN** (Recurrent neural network)-based: RNN-based architectures were first established in [1], using a GRU-based network for the clinical time-series classification with missing data. In [2], the same research group later designed an RNN-based method targeting imputation and classification tasks. This, later on, evolved into the state-of-the-art work (for HAR data), that’s the use of Bi-directional RNNs in BRITS [3] which has been published at NeurIPS’18. BRITS proposes a combination of a recurrent dynamic network and regression models that simultaneously work to impute the missing values. This makes BRITS robust to multiple correlated missing values and can be applied to different settings(datasets) as a data-driven imputation procedure. The limitation of this work is that BRITS has eliminated just 10% of the time-series data randomly from the ground truth. Since BRITS’ network depends on the value of the missing variables (using them as variables for the RNN graph), an increase in the missingness will possibly lead to a quick rise in the error rate and consecutively the classification accuracy. Also, attention-based networks have performed way better than BRITS on other datasets.
+* **GAN** (Generative Adversarial Network)-based: In [4], a generative adversarial network-based architecture has been introduced for the imputation task. The generator itself, however, consists of a GRU unit meant for imputation. Imputation is being treated as a data generation task, and once the complete time series has been obtained, it is used in downstream prediction applications, amongst others. This has experimented with datasets in the Medical and environmental domains. E2GAN [5] is a better version of this network which solves the imputation task in a single stage while using an auto-encoder-based GRU network in the generator block. There’s also a non-autoregressive model called * * NAOMI [6] for Spatio-temporal sequence imputation, which consists of a bidirectional encoder and a multiresolution decoder. These networks were tested on PhysioNet (medical) and Air-quality related datasets.
+* **VAE** (Variational Autoencoder Network)-based: [7] introduces GP-VAE, a variational auto-encoder (VAE) architecture for the imputation of time series along with a Gaussian process (GP) prior defined in the latent space. This GP-prior helps with the embedding of data into a smooth explainable representation. Other similar VAE-based works focus on other statistical aspects of the time series and infuse that information with the GP-Prior.
+* **Self-attention-based**: SAITS [8] - Self-attention-based time-series is currently the best research work for time-series-imputation that outperforms the reconstruction performance of all the previous RNN/GAN/VAE-based architectures. It has been implemented on the datasets of PhysioNet, Air-quality, and electricity load monitoring systems. As mentioned earlier, learns missing values from a weighted combination of two diagonally-masked self-attention blocks which explicitly capture both the temporal dependencies and feature correlations between time steps which in turn improves imputation accuracy and training speed.
+
+### 1.2.2 Limitations
+
+* All the previous RNN-based networks have memory constraints when dealing with long-term dependency in time series when the number of time steps missing in the data sample is relatively significant.
+* There’s also susceptibility for compounding error for most of these models predicting based on the recently amputated time series.
+* The GAN, as well as VAE-based research, involve a complex training cycle caused due to issues such as non-convergence and mode-collapse due to their respective loss formulations.
+* Only baseline approaches like mean/median/KNN-based methods have been tested on UCI HAR and PAMAPS2 datasets for imputation+classification related tasks.
+* For IMU data, MCAR, MAR, and MNAR - all the types of missingness are very common, but no existing HAR research focuses on experimenting with all of them.
+* SOTA imputation models like SAITS and BRITS have only been used on time-series datasets like PhysioNet, Air-Quality, and Electricity. The only dataset remotely close to HAR is the UCI Localization dataset, consisting of spatial x,y, and z coordinates of IMU sensors, which was used for BRITS. Moreover, from our findings on HAR datasets, the existing research only focuses on baseline imputation approaches.
+* Additionally, BRITS has many limitations like lengthy training cycles, lack of support for training on data with missingness in the raw signal, and compounding errors due to being auto-regressive.
+
 ## 1.3 Novelty & Rationale : What is new in your approach and why do you think it will be successful?
 
 The novelty of our work are as follows:
-* SOTA imputation models like SAITS and BRITS have only been used on time-series datasets like PhysioNet, Air-Quality, and Electricity. The only dataset remotely close to HAR is the UCI Localization dataset, consisting of spatial x,y, and z coordinates of IMU sensors, which was used for BRITS. Moreover, from our findings on HAR datasets, the existing research only focuses on baseline imputation approaches.
 * Inspired by SAITS, we propose a self-attention-based network that delivers its training objectives from masked language modeling.
 * It is the first in its kind to effectively perform missing data imputation as well as a multi-class classification for human activity recognition. Further, it has been tested on two popular HAR datasets - UCI HAR and PAMAPS2.
 * From our initial missingness analysis using smartphone IMU data, we observe that these devices not only have MCAR but also have MAR and MNAR missingness types. Therefore, our work is the first to perform a comparative study using SOTA models on multiple types of missingness (MCAR, MAR, and MNAR) with varying missingness rates for HAR datasets.
@@ -819,3 +834,24 @@ From our evaluations, we conclude the following:
 
 
 # 6. References
+[1] Z. C. Lipton et al., “Directly modeling missing data in sequences with RNNs: Improved classification of clinical time series,” Mach. Learning Healthcare conf., pp. 253–270, 2016. (https://proceedings.mlr.press/v56/Lipton16.html)
+
+[2] Zhengping Che, S. Purushotham, Kyunghyun Cho, D. Sontag, and Y. Liu. Recurrent neural networks for multivariate time series with missing values. Scientific Reports, 8, 2018. (https://www.nature.com/articles/s41598-018-24271-9)
+
+[3] W. Cao, D. Wang, J. Li, H. Zhou, L. Li, και Y. Li, ‘BRITS: Bidirectional Recurrent Imputation for Time Series’, στο Advances in Neural Information Processing Systems, 2018, τ. 31. (https://papers.nips.cc/paper/2018/hash/734e6bfcd358e25ac1db0a4241b95651-Abstract.html)
+
+[4] Yonghong Luo, Xiangrui Cai, Ying ZHANG, Jun Xu, and Yuan xiaojie. Multivariate time series imputation with generative adversarial networks. In S. Bengio, H. Wallach, H. Larochelle, K. Grauman, N. Cesa-Bianchi, and R. Garnett, editors, Advances in Neural Information Processing Systems, volume 31. Curran Associates, Inc., 2018. (https://papers.nips.cc/paper/2018/hash/96b9bff013acedfb1d140579e2fbeb63-Abstract.html)
+
+[5] Yonghong Luo, Ying Zhang, Xiangrui Cai, and Xiaojie Yuan. E2GAN: End-to-end generative adversarial network for multivariate time series imputation. In Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence, IJCAI-19, pages 3094–3100. International Joint Conferences on Artificial Intelligence Organization, 7 2019. (https://www.ijcai.org/proceedings/2019/429)
+
+[6] Yukai Liu, Rose Yu, Stephan Zheng, Eric Zhan, and Yisong Yue. NAOMI: Non-autoregressive multiresolution sequence imputation. In Advances in Neural Information Processing Systems, volume 32. Curran Associates, Inc., 2019 (https://proceedings.neurips.cc/paper/2019/file/50c1f44e426560f3f2cdcb3e19e39903-Paper.pdf)
+
+[7] Vincent Fortuin, Dmitry Baranchuk, Gunnar Raetsch, and Stephan Mandt. GP-VAE: Deep probabilistic time series imputation. In Silvia Chiappa and Roberto Calandra, editors, Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics, volume 108 of Proceedings of Machine Learning Research, pages 1651–1661. PMLR, 26–28 Aug 2020. (https://proceedings.mlr.press/v108/fortuin20a.html)
+
+[8] W. Du, D. Côté, και Y. Liu, ‘SAITS: Self-Attention-based Imputation for Time Series’. arXiv, 2022. (https://arxiv.org/abs/2202.08516)
+
+[9] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. (https://archive.ics.uci.edu/ml/machine-learning-databases/00240/)
+
+[10] A. Reiss and D. Stricker. Introducing a New Benchmarked Dataset for Activity Monitoring. The 16th IEEE International Symposium on Wearable Computers (ISWC), 2012. (https://www.computer.org/csdl/proceedings-article/iswc/2012/4697a108/12OmNzwZ6pa)
+
+[11] A. Reiss and D. Stricker. Creating and Benchmarking a New Dataset for Physical Activity Monitoring. The 5th Workshop on Affect and Behaviour Related Assistance (ABRA), 2012. (http://archive.ics.uci.edu/ml/datasets/pamap2%20physical%20activity%20monitoring)
