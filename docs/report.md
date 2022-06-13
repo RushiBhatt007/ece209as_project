@@ -9,19 +9,56 @@
 
 # Abstract
 
-Provide a brief overview of the project objhectives, approach, and results.
+Traditional machine learning methods for Human Activity Recognition (HAR) are significantly impacted due to data missingness. Our goal through this project is to build robust models that not only impute these signals but also build robust classifiers that can infer HAR classes from these imputed signals. Recurrent Neural Networks (RNN) have been proven to work well with time-series data due to their ability to learn temporal features and dependencies. Therefore, one of the SOTA imputation architectures we have implemented for HAR is a Bidirectional RNN based on the BRITS architecture. Also, recently self-attention mechanism-based imputation models have been used in missing value imputation for multivariate time series. Therefore, another SOTA imputation architecture we have implemented is a self-attention mechanism-based SAITS architecture. Our overall goal is to perform a comparative study between baseline models like zero-filling, mean, and median imputation, and SOTA models like BRITS and SAITS, not just for missing value imputation; but also for the downstream task of HAR classification. Most research on imputation only focuses on random Missingness, also known as Missingness Completely at Random (MCAR); but IMU signals encounter other types of Missingness too, namely Missingness at Random (MAR) and Missingness Not at Random (MNAR). Therefore, through this project, we have also extensively evaluated these models on various missingness types, as well as varying missingness rates, all performed on two popular publicly available HAR datasets: UCI HAR and PAMAPS2.
 
 # 1. Introduction
 
-This section should cover the following items:
+## 1.1 Motivation & Objective : What are you trying to do and why? (plain English without jargon)
 
-* Motivation & Objective: What are you trying to do and why? (plain English without jargon)
-* State of the Art & Its Limitations: How is it done today, and what are the limits of current practice?
-* Novelty & Rationale: What is new in your approach and why do you think it will be successful?
-* Potential Impact: If the project is successful, what difference will it make, both technically and broadly?
-* Challenges: What are the challenges and risks?
-* Requirements for Success: What skills and resources are necessary to perform the project?
-* Metrics of Success: What are metrics by which you would check for success?
+Human Activity Recognition (HAR) is the process of automatically inferring a user’s activity (e.g., walking, sitting, standing) based on sensor data (e.g., accelerometers, gyroscope) typically from devices like smartphones and smartwatches. However, the traditional machine learning method’s performance decreases significantly in real-life applications due to the problem of data missingness. Data Missingness in sensors typically happens due to power limitation, hardware failure, transmission packet loss, and many more. Our goal through this project is twofold, first is to investigate the data missingness distribution for Inertial Measurement Units (IMU). Secondly, it is to build robust models that not only impute the IMU signals but also successfully perform the task of activity classification.
+
+## 1.2 State of the Art & Its Limitations : How is it done today, and what are the limits of current practice?
+
+## 1.3 Novelty & Rationale : What is new in your approach and why do you think it will be successful?
+
+The novelty of our work are as follows:
+* SOTA imputation models like SAITS and BRITS have only been used on time-series datasets like PhysioNet, Air-Quality, and Electricity. The only dataset remotely close to HAR is the UCI Localization dataset, consisting of spatial x,y, and z coordinates of IMU sensors, which was used for BRITS. Moreover, from our findings on HAR datasets, the existing research only focuses on baseline imputation approaches.
+* Inspired by SAITS, we propose a self-attention-based network that delivers its training objectives from masked language modeling.
+* It is the first in its kind to effectively perform missing data imputation as well as a multi-class classification for human activity recognition. Further, it has been tested on two popular HAR datasets - UCI HAR and PAMAPS2.
+* From our initial missingness analysis using smartphone IMU data, we observe that these devices not only have MCAR but also have MAR and MNAR missingness types. Therefore, our work is the first to perform a comparative study using SOTA models on multiple types of missingness (MCAR, MAR, and MNAR) with varying missingness rates for HAR datasets.
+* Our approach not only outperforms other SOTA imputation models over various metrics but also has a faster training and inference time cycle. This makes it much more feasible for mobile applications where IMU data is extensively used.
+* Our approach is also capable of handling potential use cases where the raw data itself contains missing values. We have showcased this through experimentations on the PAMAPS2 dataset, which includes a lot of missing values.
+
+
+## 1.4 Potential Impact : If the project is successful, what difference will it make, both technically and broadly?
+
+HAR classification from IMU signals is applicable in various domains like sports, eldercare, and healthcare. However, these HAR models, when deployed on edge devices, won’t necessarily perform validation on “clean data.” Missing data is an inherent problem in many applications involving sensors, and therefore mitigating it can have tremendous implications.
+
+Following are the potential impact that our work can make:
+* **Robust HAR on-edge**: Our work can improve the performance of edge devices in scenarios where power constraints, channel noise, and other interferences cause data missingness. Also, because it is lightweight and has a faster inference time, it becomes a natural choice for the task of on-edge HAR.
+* **IMUs beyond HAR**: IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized to improve the performance of the abovementioned tasks.
+* **Generalized time-series missingness**: We make very few assumptions about the signals and their missingness (experiment over multiple types of missingness, varying missingness rates, and multiple HAR datasets); therefore, it is also possible to extend these robust models to other time-series-based problems like stock market prediction and EEG/ ECG classification, and COVID-spread forecast.
+
+
+## 1.5 Challenges : What are the challenges and risks?
+
+## 1.6 Requirements for Success : What skills and resources are necessary to perform the project?
+
+## 1.7 Metrics of Success : What are metrics by which you would check for success?
+
+We will be using two sets of evaluation metrics to determine the success of our research work. 
+
+Metrics for imputation performance: 
+* MAE (Mean Absolute Error)
+* RMSE (Root Mean Square Error)
+* MRE (Mean Relative Error) 
+
+Metrics for classification performance: 
+* Accuracy (percentage of correct predictions)
+* F1-Score (to take into account class distribution)
+
+We will be evaluating these parameters for three missingness types, namely: MCAR, MAR, and MNAR, with varying missingness rates from 10 % to 90 % for all five imputation models. 
+
 
 # 2. Related Work
 
