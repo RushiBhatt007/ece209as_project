@@ -1,6 +1,39 @@
 import numpy as np
 import pandas as pd
 
+# load a single file as a numpy array
+def load_file(filepath):
+    dataframe = pd.read_csv(filepath, header=None, delim_whitespace=True)
+    return dataframe.values
+
+# load a list of files and return as a 3d numpy array
+def load_group(filenames, prefix=''):
+    loaded = list()
+    for name in filenames:
+        data = load_file(prefix + name)
+        loaded.append(data)
+    # stack group so that features are the 3rd dimension
+    loaded = np.dstack(loaded)
+    return loaded
+
+# load a dataset group, such as train or test
+def load_dataset_group(group, prefix=''):
+    filepath = prefix + group + '/Inertial_Signals/'
+    print('File Path : ',filepath)
+    # load all 9 files as a single array
+    filenames = list()
+    # total acceleration
+    filenames += ['total_acc_x_'+group+'.txt', 'total_acc_y_'+group+'.txt', 'total_acc_z_'+group+'.txt']
+    # body acceleration
+    filenames += ['body_acc_x_'+group+'.txt', 'body_acc_y_'+group+'.txt', 'body_acc_z_'+group+'.txt']
+    # body gyroscope
+    filenames += ['body_gyro_x_'+group+'.txt', 'body_gyro_y_'+group+'.txt', 'body_gyro_z_'+group+'.txt']
+    # load input data
+    X = load_group(filenames, filepath)
+    # load class output
+    y = load_file(prefix + group + '/y_'+group+'.txt')
+    return X, y
+
 def uci(
 ) -> dict:
 
@@ -13,38 +46,11 @@ def uci(
             - 'y': Corresponding labels for timeseries.
     """
 
-    train_directory = "D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/train/Inertial_Signals/"
+    X_train, y_train = load_dataset_group('train', 'D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/')
+    X_test, y_test = load_dataset_group('test', 'D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/')
 
-    train_files = ["body_acc_x_train.txt", "body_acc_y_train.txt", "body_acc_z_train.txt", 
-            "body_gyro_x_train.txt", "body_gyro_y_train.txt", "body_gyro_z_train.txt", 
-            "body_acc_x_train.txt", "body_acc_y_train.txt", "body_acc_z_train.txt"]
-
-    train_df = []
-    train_y = pd.read_csv("D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/train/y_train.txt", header=None)
-
-    test_directory = "D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/test/Inertial_Signals/"
-
-    test_files = ["body_acc_x_test.txt", "body_acc_y_test.txt", "body_acc_z_test.txt", 
-            "body_gyro_x_test.txt", "body_gyro_y_test.txt", "body_gyro_z_test.txt", 
-            "body_acc_x_test.txt", "body_acc_y_test.txt", "body_acc_z_test.txt"]
-
-    test_df = []
-    test_y = pd.read_csv("D:/GitHub/ece209as_project/data/UCI_HAR_Dataset/test/y_test.txt", header=None)
-
-
-    for train_file in train_files:
-        df = pd.read_csv(train_directory+train_file, delim_whitespace=True, header=None)
-        train_df.append(np.array(df))
-
-    for test_file in test_files:
-        df = pd.read_csv(test_directory+test_file, delim_whitespace=True, header=None)
-        test_df.append(np.array(df))
-
-    train_X = np.array(train_df).reshape([len(train_y), 128, 9])
-    test_X = np.array(test_df).reshape([len(test_y), 128, 9])
-
-    X = np.concatenate((train_X, test_X), axis=0)
-    y = np.concatenate((train_y, test_y), axis=0)
+    X = np.concatenate((X_train, X_test), axis=0)
+    y = np.concatenate((y_train, y_test), axis=0)
 
     return {"X": X, "y": y}
 
