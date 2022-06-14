@@ -357,15 +357,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
 <tbody>
   <tr>
     <td class="tg-fymr">10 %</td>
-    <td class="tg-0pky">0.114886</td>
-    <td class="tg-0pky">0.233225</td>
-    <td class="tg-0pky">1.36e+14</td>
-    <td class="tg-0pky">0.115776</td>
-    <td class="tg-0pky">0.232347</td>
-    <td class="tg-0pky">7.88e+00</td>
-    <td class="tg-0lax">0.113634</td>
-    <td class="tg-0lax">0.234785</td>
-    <td class="tg-0lax">5.55e+00</td>
+    <td class="tg-0pky">0.241908</td>
+    <td class="tg-0pky">0.412919</td>
+    <td class="tg-0pky">2.86e+14</td>
+    <td class="tg-0pky">0.776911</td>
+    <td class="tg-0pky">0.897924</td>
+    <td class="tg-0pky">0.94e+00</td>
+    <td class="tg-0lax">0.755901</td>
+    <td class="tg-0lax">0.874692</td>
+    <td class="tg-0lax">0.95e+00</td>
     <td class="tg-0lax">0.071421</td>
     <td class="tg-0lax">0.189044</td>
     <td class="tg-0lax">1.01e+00</td>
@@ -375,15 +375,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">20 %</td>
-    <td class="tg-0pky">0.114861</td>
-    <td class="tg-0pky">0.233171</td>
-    <td class="tg-0pky">2.72e+14</td>
-    <td class="tg-0pky">0.115862</td>
-    <td class="tg-0pky">0.232386</td>
-    <td class="tg-0pky">7.52e+00</td>
-    <td class="tg-0lax">0.113686</td>
-    <td class="tg-0lax">0.234810</td>
-    <td class="tg-0lax">5.45e+00</td>
+    <td class="tg-0pky">0.265971</td>
+    <td class="tg-0pky">0.454341</td>
+    <td class="tg-0pky">6.31e+14</td>
+    <td class="tg-0pky">0.854312</td>
+    <td class="tg-0pky">0.987369</td>
+    <td class="tg-0pky">1.04e+00</td>
+    <td class="tg-0lax">0.831223</td>
+    <td class="tg-0lax">0.961850</td>
+    <td class="tg-0lax">1.04e+00</td>
     <td class="tg-0lax">0.103246</td>
     <td class="tg-0lax">0.184325</td>
     <td class="tg-0lax">9.57e-01</td>
@@ -393,15 +393,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">30 %</td>
-    <td class="tg-0pky">0.114897</td>
-    <td class="tg-0pky">0.233380</td>
-    <td class="tg-0pky">4.09e+14</td>
-    <td class="tg-0lax">0.116015</td>
-    <td class="tg-0lax">0.232767</td>
-    <td class="tg-0lax">7.11e+00</td>
-    <td class="tg-0pky">0.113850</td>
-    <td class="tg-0pky">0.235246</td>
-    <td class="tg-0pky">5.35e+00</td>
+    <td class="tg-0pky">0.290546</td>
+    <td class="tg-0pky">0.495989</td>
+    <td class="tg-0pky">1.03e+15</td>
+    <td class="tg-0lax">0.932390</td>
+    <td class="tg-0lax">1.077443</td>
+    <td class="tg-0lax">1.33e+00</td>
+    <td class="tg-0pky">0.907377</td>
+    <td class="tg-0pky">1.049769</td>
+    <td class="tg-0pky">1.14e+00</td>
     <td class="tg-0lax">0.095643</td>
     <td class="tg-0lax">0.186893</td>
     <td class="tg-0lax">9.97e-01</td>
@@ -411,15 +411,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">40 %</td>
-    <td class="tg-0pky">0.114970</td>
-    <td class="tg-0pky">0.233541</td>
-    <td class="tg-0pky">5.45e+14</td>
-    <td class="tg-0pky">0.116230</td>
-    <td class="tg-0pky">0.233240</td>
-    <td class="tg-0pky">6.74e+00</td>
-    <td class="tg-0lax">0.114093</td>
-    <td class="tg-0lax">0.235702</td>
-    <td class="tg-0lax">5.21e+00</td>
+    <td class="tg-0pky">0.314458</td>
+    <td class="tg-0pky">0.536854</td>
+    <td class="tg-0pky">1.49e+15</td>
+    <td class="tg-0pky">1.009885</td>
+    <td class="tg-0pky">1.167183</td>
+    <td class="tg-0pky">1.23e+00</td>
+    <td class="tg-0lax">0.982692</td>
+    <td class="tg-0lax">1.137118</td>
+    <td class="tg-0lax">1.23e+00</td>
     <td class="tg-0lax">0.113654</td>
     <td class="tg-0lax">0.189329</td>
     <td class="tg-0lax">9.99e-01</td>
@@ -429,15 +429,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">50 %</td>
-    <td class="tg-0pky">0.114846</td>
-    <td class="tg-0pky">0.233221</td>
-    <td class="tg-0pky">6.81e+14</td>
-    <td class="tg-0pky">0.116242</td>
-    <td class="tg-0pky">0.233056</td>
-    <td class="tg-0pky">6.39e+00</td>
-    <td class="tg-0lax">0.1141123</td>
-    <td class="tg-0lax">0.235713</td>
-    <td class="tg-0lax">4.9e+00</td>
+    <td class="tg-0pky">0.338482</td>
+    <td class="tg-0pky">0.578073</td>
+    <td class="tg-0pky">2.00e+15</td>
+    <td class="tg-0pky">1.088094</td>
+    <td class="tg-0pky">1.257354</td>
+    <td class="tg-0pky">1.33e+00</td>
+    <td class="tg-0lax">1.058985</td>
+    <td class="tg-0lax">1.225220</td>
+    <td class="tg-0lax">1.33e+00</td>
     <td class="tg-0lax">0.113654</td>
     <td class="tg-0lax">0.19139</td>
     <td class="tg-0lax">1.10e00</td>
@@ -447,15 +447,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">60 %</td>
-    <td class="tg-0pky">0.114908</td>
-    <td class="tg-0pky">0.233391</td>
-    <td class="tg-0pky">8.18e+14</td>
-    <td class="tg-0pky">0.116668</td>
-    <td class="tg-0pky">0.233770</td>
-    <td class="tg-0pky">5.83e+00</td>
-    <td class="tg-0lax">0.114482</td>
-    <td class="tg-0lax">0.236468</td>
-    <td class="tg-0lax">4.71e+00</td>
+    <td class="tg-0pky">0.362732</td>
+    <td class="tg-0pky">0.619305</td>
+    <td class="tg-0pky">2.58e+15</td>
+    <td class="tg-0pky">1.165613</td>
+    <td class="tg-0pky">1.347124</td>
+    <td class="tg-0pky">1.423687</td>
+    <td class="tg-0lax">1.134844</td>
+    <td class="tg-0lax">1.313155</td>
+    <td class="tg-0lax">1.42e+00</td>
     <td class="tg-0lax">0.115624</td>
     <td class="tg-0lax">0.198277</td>
     <td class="tg-0lax">1.13e+01</td>
@@ -465,15 +465,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">70 %</td>
-    <td class="tg-0pky">0.114844</td>
-    <td class="tg-0pky">0.233293</td>
-    <td class="tg-0pky">9.53e+14</td>
-    <td class="tg-0pky">0.117091</td>
-    <td class="tg-0pky">0.234323</td>
-    <td class="tg-0pky">5.31e+00</td>
-    <td class="tg-0lax">0.114992</td>
-    <td class="tg-0lax">0.237402</td>
-    <td class="tg-0lax">4.42e+00</td>
+    <td class="tg-0pky">0.386891</td>
+    <td class="tg-0pky">0.660723</td>
+    <td class="tg-0pky">3.21e+15</td>
+    <td class="tg-0pky">1.243150</td>
+    <td class="tg-0pky">1.436976</td>
+    <td class="tg-0pky">1.51e+00</td>
+    <td class="tg-0lax">1.211076</td>
+    <td class="tg-0lax">1.401609</td>
+    <td class="tg-0lax">1.52e+00</td>
     <td class="tg-0lax">0.115988</td>
     <td class="tg-0lax">0.199835</td>
     <td class="tg-0lax">1.23e+00</td>
@@ -483,15 +483,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">80 %</td>
-    <td class="tg-0pky">0.114819</td>
-    <td class="tg-0pky">0.233297</td>
-    <td class="tg-0pky">1.09e+15</td>
-    <td class="tg-0pky">0.117917</td>
-    <td class="tg-0pky">0.235792</td>
-    <td class="tg-0pky">4.44e+0</td>
-    <td class="tg-0lax">0.115974</td>
-    <td class="tg-0lax">0.239364</td>
-    <td class="tg-0lax">3.87e+00</td>
+    <td class="tg-0pky">0.411090</td>
+    <td class="tg-0pky">0.702014</td>
+    <td class="tg-0pky">3.90e+15</td>
+    <td class="tg-0pky">1.320939</td>
+    <td class="tg-0pky">1.527140</td>
+    <td class="tg-0pky">1.61e+0</td>
+    <td class="tg-0lax">1.288818</td>
+    <td class="tg-0lax">1.491931</td>
+    <td class="tg-0lax">1.61e+00</td>
     <td class="tg-0lax">0.118903</td>
     <td class="tg-0lax">0.21341</td>
     <td class="tg-0lax">1.83e+00</td>
@@ -501,14 +501,14 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">90 %</td>
-    <td class="tg-0pky">0.114822</td>
-    <td class="tg-0pky">0.233171</td>
-    <td class="tg-0pky">1.22e+15</td>
-    <td class="tg-0pky">0.120713</td>
-    <td class="tg-0pky">0.240714</td>
-    <td class="tg-0pky">3.32e+00</td>
-    <td class="tg-0lax">0.119336</td>
-    <td class="tg-0lax">0.245459</td>
+    <td class="tg-0pky">0.435221</td>
+    <td class="tg-0pky">0.743202</td>
+    <td class="tg-0pky">4.67e+15</td>
+    <td class="tg-0pky">1.400586</td>
+    <td class="tg-0pky">1.709149</td>
+    <td class="tg-0pky">1.37e+00</td>
+    <td class="tg-0lax">1.370342</td>
+    <td class="tg-0lax">1.713084</td>
     <td class="tg-0lax">2.97e+00</td>
     <td class="tg-0lax">0.123216</td>
     <td class="tg-0lax">0.23548</td>
