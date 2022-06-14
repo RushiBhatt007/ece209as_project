@@ -313,12 +313,12 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">92.52%</td>
-    <td class="tg-0pky">0.95</td>
-    <td class="tg-0pky">88.54%</td>
-    <td class="tg-0pky">0.91</td>
-    <td class="tg-0pky">90.92%</td>
-    <td class="tg-0pky">0.93</td>
+    <td class="tg-0pky">99.16%</td>
+    <td class="tg-0pky">0.99</td>
+    <td class="tg-0pky">99.16%</td>
+    <td class="tg-0pky">0.99</td>
+    <td class="tg-0pky">97.16%</td>
+    <td class="tg-0pky">0.97</td>
   </tr>
 </tbody>
 </table>
