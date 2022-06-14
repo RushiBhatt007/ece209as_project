@@ -241,15 +241,15 @@ For classification, we train the CNN-based classifier on 90% of the original dat
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">0.025206</td>
-    <td class="tg-0pky">0.068027</td>
-    <td class="tg-0pky">2.19e-01</td>
-    <td class="tg-0pky">0.059130</td>
-    <td class="tg-0pky">0.289041</td>
-    <td class="tg-0pky">1.00e+00</td>
-    <td class="tg-0pky">0.043189</td>
-    <td class="tg-0pky">0.134634</td>
-    <td class="tg-0pky">1.03e+00</td>
+    <td class="tg-0pky">0.032241</td>
+    <td class="tg-0pky">0.076779</td>
+    <td class="tg-0pky">1.33e-01</td>
+    <td class="tg-0pky">0.036456</td>
+    <td class="tg-0pky">0.083063</td>
+    <td class="tg-0pky">1.50e-01</td>
+    <td class="tg-0pky">0.035134</td>
+    <td class="tg-0pky">0.079133</td>
+    <td class="tg-0pky">1.45e-01</td>
   </tr>
 </tbody>
 </table>
