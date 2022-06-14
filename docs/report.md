@@ -369,9 +369,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.071421</td>
     <td class="tg-0lax">0.189044</td>
     <td class="tg-0lax">1.01e+00</td>
-    <td class="tg-0lax">0.025206</td>
-    <td class="tg-0lax">0.078027</td>
-    <td class="tg-0lax">2.19e-01</td>
+    <td class="tg-0lax">0.032241</td>
+    <td class="tg-0lax">0.076779</td>
+    <td class="tg-0lax">1.33e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">20 %</td>
@@ -387,9 +387,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.103246</td>
     <td class="tg-0lax">0.184325</td>
     <td class="tg-0lax">9.57e-01</td>
-    <td class="tg-0lax">0.039735</td>
-    <td class="tg-0lax">0.099199</td>
-    <td class="tg-0lax">3.46e-01</td>
+    <td class="tg-0lax">0.039748</td>
+    <td class="tg-0lax">0.088735</td>
+    <td class="tg-0lax">1.64e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">30 %</td>
@@ -405,9 +405,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.095643</td>
     <td class="tg-0lax">0.186893</td>
     <td class="tg-0lax">9.97e-01</td>
-    <td class="tg-0lax">0.043035</td>
-    <td class="tg-0lax">0.107692</td>
-    <td class="tg-0lax">3.74e-01</td>
+    <td class="tg-0lax">0.040181</td>
+    <td class="tg-0lax">0.098522</td>
+    <td class="tg-0lax">1.66e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">40 %</td>
@@ -423,9 +423,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.113654</td>
     <td class="tg-0lax">0.189329</td>
     <td class="tg-0lax">9.99e-01</td>
-    <td class="tg-0lax">0.049995</td>
-    <td class="tg-0lax">0.121676</td>
-    <td class="tg-0lax">4.34e-01</td>
+    <td class="tg-0lax">0.039748</td>
+    <td class="tg-0lax">0.088735</td>
+    <td class="tg-0lax">1.64e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">50 %</td>
@@ -441,9 +441,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.113654</td>
     <td class="tg-0lax">0.19139</td>
     <td class="tg-0lax">1.10e00</td>
-    <td class="tg-0lax">0.058269</td>
-    <td class="tg-0lax">0.136983</td>
-    <td class="tg-0lax">5.0e-01</td>
+    <td class="tg-0lax">0.046216</td>
+    <td class="tg-0lax">0.111676</td>
+    <td class="tg-0lax">1.91e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">60 %</td>
@@ -459,9 +459,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.115624</td>
     <td class="tg-0lax">0.198277</td>
     <td class="tg-0lax">1.13e+01</td>
-    <td class="tg-0lax">0.061764</td>
-    <td class="tg-0lax">0.142273</td>
-    <td class="tg-0lax">5.37e-01</td>
+    <td class="tg-0lax">0.063642</td>
+    <td class="tg-0lax">0.136941</td>
+    <td class="tg-0lax">2.63e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">70 %</td>
@@ -477,9 +477,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.115988</td>
     <td class="tg-0lax">0.199835</td>
     <td class="tg-0lax">1.23e+00</td>
-    <td class="tg-0lax">0.075420</td>
-    <td class="tg-0lax">0.167893</td>
-    <td class="tg-0lax">6.56e-01</td>
+    <td class="tg-0lax">0.063642</td>
+    <td class="tg-0lax">0.136941</td>
+    <td class="tg-0lax">2.636e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">80 %</td>
@@ -495,9 +495,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.118903</td>
     <td class="tg-0lax">0.21341</td>
     <td class="tg-0lax">1.83e+00</td>
-    <td class="tg-0lax">0.086623</td>
-    <td class="tg-0lax">0.186676</td>
-    <td class="tg-0lax">7.54e-01</td>
+    <td class="tg-0lax">0.063642</td>
+    <td class="tg-0lax">0.136941</td>
+    <td class="tg-0lax">2.63e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">90 %</td>
@@ -513,9 +513,9 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-0lax">0.123216</td>
     <td class="tg-0lax">0.23548</td>
     <td class="tg-0lax">2.13e+00</td>
-    <td class="tg-0lax">0.100667</td>
-    <td class="tg-0lax">0.209792</td>
-    <td class="tg-0lax">8.76e-01</td>
+    <td class="tg-0lax">0.063642</td>
+    <td class="tg-0lax">0.136941</td>
+    <td class="tg-0lax">2.63e-01</td>
   </tr>
 </tbody>
 </table>
@@ -542,63 +542,63 @@ For classification, we train the CNN-based classifier on 90% of the original dat
     <td class="tg-fymr">10%</td>
     <td class="tg-0lax">91.17%</td>
     <td class="tg-0lax">0.94</td>
-    <td class="tg-0lax">92.52%</td>
-    <td class="tg-0lax">0.95</td>
+    <td class="tg-0lax">99.16%</td>
+    <td class="tg-0lax">0.99</td>
   </tr>
   <tr>
     <td class="tg-fymr">20%</td>
     <td class="tg-0lax">90.73%</td>
     <td class="tg-0lax">0.92</td>
-    <td class="tg-0lax">91.65%</td>
-    <td class="tg-0lax">0.94</td>
+    <td class="tg-0lax">96.67%</td>
+    <td class="tg-0lax">0.96</td>
   </tr>
   <tr>
     <td class="tg-fymr">30%</td>
     <td class="tg-0lax">82.62%</td>
     <td class="tg-0lax">0.81</td>
-    <td class="tg-0lax">86.67%</td>
-    <td class="tg-0lax">0.87</td>
+    <td class="tg-0lax">91.33%</td>
+    <td class="tg-0lax">0.90</td>
   </tr>
   <tr>
     <td class="tg-fymr">40%</td>
     <td class="tg-0lax">76.86%</td>
     <td class="tg-0lax">0.74</td>
-    <td class="tg-0lax">81.37%</td>
-    <td class="tg-0lax">0.79</td>
+    <td class="tg-0lax">82.97%</td>
+    <td class="tg-0lax">0.81</td>
   </tr>
   <tr>
     <td class="tg-fymr">50%</td>
     <td class="tg-0lax">68.43%</td>
     <td class="tg-0lax">0.66</td>
-    <td class="tg-0lax">74.27%</td>
-    <td class="tg-0lax">0.75</td>
+    <td class="tg-0lax">75.97%</td>
+    <td class="tg-0lax">0.76</td>
   </tr>
   <tr>
     <td class="tg-fymr">60%</td>
     <td class="tg-0lax">59.14%</td>
     <td class="tg-0lax">0.56</td>
-    <td class="tg-0lax">67.23%</td>
-    <td class="tg-0lax">0.65</td>
+    <td class="tg-0lax">63.74%</td>
+    <td class="tg-0lax">0.62</td>
   </tr>
   <tr>
     <td class="tg-fymr">70%</td>
     <td class="tg-0lax">48.22%</td>
     <td class="tg-0lax">0.46</td>
-    <td class="tg-0lax">56.21%</td>
-    <td class="tg-0lax">0.55</td>
+    <td class="tg-0lax">56.22%</td>
+    <td class="tg-0lax">0.56</td>
   </tr>
   <tr>
     <td class="tg-fymr">80%</td>
     <td class="tg-0lax">43.86%</td>
     <td class="tg-0lax">0.39</td>
-    <td class="tg-0lax">50.49%</td>
-    <td class="tg-0lax">0.48</td>
+    <td class="tg-0lax">50.12%</td>
+    <td class="tg-0lax">0.51</td>
   </tr>
   <tr>
     <td class="tg-fymr">90%</td>
     <td class="tg-0lax">39.45%</td>
     <td class="tg-0lax">0.37</td>
-    <td class="tg-0lax">45.68%</td>
+    <td class="tg-0lax">42.36%</td>
     <td class="tg-0lax">0.43</td>
   </tr>
 </tbody>
