@@ -713,7 +713,7 @@ From our evaluations, we conclude the following:
 * SAITS **generalizes** well as we have tested it on two popular - UCI HAR and PAMAPS2 dataset.
 
 ## 5.2 Future Work
-* Our best classifier (CNN-based) on SAIT imputed data achieved ~92.5 % for UCI HAR, and ~91 % for PAMAPS2 (with 10% MCAR); however their existing SOTA models have achieved ~98 %  test accuracy. Therefore we see a new direction of future research in experimenting with SOTA/building better classifiers.
+* Our CNN-based classifier on SAITS imputed data drastically drops it's performance as we increase the missingness rate; and therefore one new direction of future research would be in experimenting with SOTA/ building better classifiers.
 * IMU signals from smartphones and smartwatches are also used for various other applications like gait classification, step counting, and gesture control; therefore, the reconstructed signals from our imputation method can be utilized to improve the performance of the above mentioned tasks.
 
 
