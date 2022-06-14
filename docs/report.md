@@ -13,11 +13,11 @@ Traditional machine learning methods for Human Activity Recognition (HAR) are si
 
 # 1. Introduction
 
-## 1.1 Motivation & Objective : What are you trying to do and why? (plain English without jargon)
+## 1.1 Motivation & Objective
 
 Human Activity Recognition (HAR) is the process of automatically inferring a user’s activity (e.g., walking, sitting, standing) based on sensor data (e.g., accelerometers, gyroscope) typically from devices like smartphones and smartwatches. However, the traditional machine learning method’s performance decreases significantly in real-life applications due to the problem of data missingness. Data Missingness in sensors typically happens due to power limitation, hardware failure, transmission packet loss, and many more. Our goal through this project is twofold, first is to investigate the data missingness distribution for Inertial Measurement Units (IMU). Secondly, it is to build robust models that not only impute the IMU signals but also successfully perform the task of activity classification.
 
-## 1.2 State of the Art & Its Limitations : How is it done today, and what are the limits of current practice?
+## 1.2 State of the Art & Its Limitations
 
 ### 1.2.1 Current State of the Art (SOTA)
 * **RNN** (Recurrent neural network)-based: RNN-based architectures were first established in [1], using a GRU-based network for the clinical time-series classification with missing data. In [2], the same research group later designed an RNN-based method targeting imputation and classification tasks. This, later on, evolved into the state-of-the-art work (for HAR data), that’s the use of Bi-directional RNNs in BRITS [3] which has been published at NeurIPS’18. BRITS proposes a combination of a recurrent dynamic network and regression models that simultaneously work to impute the missing values. This makes BRITS robust to multiple correlated missing values and can be applied to different settings(datasets) as a data-driven imputation procedure. The limitation of this work is that BRITS has eliminated just 10% of the time-series data randomly from the ground truth. Since BRITS’ network depends on the value of the missing variables (using them as variables for the RNN graph), an increase in the missingness will possibly lead to a quick rise in the error rate and consecutively the classification accuracy. Also, attention-based networks have performed way better than BRITS on other datasets.
@@ -35,7 +35,7 @@ Human Activity Recognition (HAR) is the process of automatically inferring a use
 * SOTA imputation models like SAITS and BRITS have only been used on time-series datasets like PhysioNet, Air-Quality, and Electricity. The only dataset remotely close to HAR is the UCI Localization dataset, consisting of spatial x,y, and z coordinates of IMU sensors, which was used for BRITS. Moreover, from our findings on HAR datasets, the existing research only focuses on baseline imputation approaches.
 * Additionally, BRITS has many limitations like lengthy training cycles, lack of support for training on data with missingness in the raw signal, and compounding errors due to being auto-regressive.
 
-## 1.3 Novelty & Rationale : What is new in your approach and why do you think it will be successful?
+## 1.3 Novelty & Rationale
 
 The novelty of our work are as follows:
 * Inspired by SAITS, we propose a self-attention-based network that delivers its training objectives from masked language modeling.
@@ -45,7 +45,7 @@ The novelty of our work are as follows:
 * Our approach is also capable of handling potential use cases where the raw data itself contains missing values. We have showcased this through experimentations on the PAMAPS2 dataset, which includes a lot of missing values.
 
 
-## 1.4 Potential Impact : If the project is successful, what difference will it make, both technically and broadly?
+## 1.4 Potential Impact
 
 HAR classification from IMU signals is applicable in various domains like sports, eldercare, and healthcare. However, these HAR models, when deployed on edge devices, won’t necessarily perform validation on “clean data.” Missing data is an inherent problem in many applications involving sensors, and therefore mitigating it can have tremendous implications.
 
@@ -55,11 +55,22 @@ Following are the potential impact that our work can make:
 * **Generalized time-series missingness**: We make very few assumptions about the signals and their missingness (experiment over multiple types of missingness, varying missingness rates, and multiple HAR datasets); therefore, it is also possible to extend these robust models to other time-series-based problems like stock market prediction and EEG/ ECG classification, and COVID-spread forecast.
 
 
-## 1.5 Challenges : What are the challenges and risks?
+## 1.5 Challenges
+* Extending ideas of MAR and MNAR - distribution-based missingness models to HAR dataset, as the existing literature only focuses on MCAR. 
+* Most SOTA implementations on data imputation deal with low-frequency biological data sets like medical records. A potential challenge was to extend similar models and ideas for high-frequency data from IMUs for the task of HAR.
+* Training these SOTA models was very time-consuming; often, many experiments took days. Secondly, working with the PAMAPS2 dataset was also an issue as PyTorch loads the entire dataset into RAM. Therefore, 32 GB of our local computer was often insufficient to run experiments. 
+* Unlike the UCI HAR dataset, PAMAPS2 is not preprocessed, meaning that it has not been windowed and therefore identifying the window size for our task was also a challenge.
+* For downstream classification, running the RNN-based classifier proposed in SOTA papers was also a challenge because it took several hours, even for a small UCI HAR dataset consisting of about 10k samples.
 
-## 1.6 Requirements for Success : What skills and resources are necessary to perform the project?
+## 1.6 Requirements for Success
+* Access to HAR dataset
+* Access to a local machine with good GPU/ Google Colab Pro
+* Strong fundamental knowledge of machine learning, signal processing, and deep learning
+* Thorough understanding of baseline imputation techniques and SOTA papers
+* Strong programming skills in Python along with hands-on experience in working with Keras, Numpy, Tensorflow, and Pytorch
+* Ability to rapidly replicate existing work as well as perform long and iterative experimentations with modifications
 
-## 1.7 Metrics of Success : What are metrics by which you would check for success?
+## 1.7 Metrics of Success
 
 We will be using two sets of evaluation metrics to determine the success of our research work. 
 
@@ -134,18 +145,30 @@ A brief summary of the research work mentioned in earlier sections can be found 
 ### 3.2.2 BRITS
 BRITS is a Bidirectional Recurrent Imputation for Time Series. It learns the missing values in a bidirectional recurrent dynamical system, and the implementation is as shown in the figure below.The imputed values are treated as variables of RNN graph and can be effectively updated during backpropagation. However, it still has some limitations mainly due to compounding errors which exist in RNN-based models. 
 
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/fig3_brits_model.jpg)
+
+
+
 ### 3.2.3 SAITS
 SAITS is Self-Attention-based Imputation for Time Series.Trained by a joint-optimization approach, SAITS learns missing values from a weighted combination of two diagonally-masked self-attention (DMSA) blocks. DMSA explicitly captures both the temporal dependencies and feature correlations between time steps, which improves imputation accuracy and training speed. Meanwhile, the weighted combination design enables SAITS to dynamically assign weights to the learned representations from two DMSA blocks according to the attention map and the missingness information. The model block diagram and training cyle is as shown in the figures below.
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/fig2_saits_model.jpg)
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/fig1_saits_training.jpg)
 
 ## 3.3 Classification Models
 
 For the downstream classification task, we are using a CNN-based, unlike the RNN-based one, which both BRITS and SAITS are using. We chose this because we observed that RNNs take a very long time for training on our HAR datasets. For instance, our CNN-based classifier took about 15 sec/ epoch, whereas their proposed RNN classifier took upwards of 8-9 minutes/ epoch. The figure below shows the pipeline of our approach.
 
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/fig4_classifier.jpg)
+
 # 4. Evaluation and Results
 
-## Results UCI HAR Dataset
+We performed imputation tasks with MCAR, MAR, and MNAR missingness on UCI HAR and PAMAPS 2 datasets; however, extensive experimentations with varying missingness rates and the downstream classification task were performed only on the UCI HAR dataset due to resource constraints.  Also, we have generated visuals showing how well our approach imputes the missing signal, comparing it against the original input.
 
-### Imputation performance for MCAR, MAR, and MNAR missingness type
+For classification, we train the CNN-based classifier on 90% of the original data and validate it on 10 % of the remaining test data imputed by our model.
+
+## 4.1 Comparative Study on UCI HAR Dataset
+
+### 4.1.1 Imputation performance for MCAR, MAR, and MNAR missingness type
 
 <table class="tg">
 <thead>
@@ -170,51 +193,51 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">0.11486</td>
-    <td class="tg-0pky">0.23322</td>
-    <td class="tg-0pky">1.36e+14</td>
-    <td class="tg-0pky">0.163882</td>
-    <td class="tg-0pky">0.309273</td>
-    <td class="tg-0pky">9.71e+13</td>
-    <td class="tg-0pky">0.137518</td>
-    <td class="tg-0pky">0.269574</td>
-    <td class="tg-0pky">1.63e+13</td>
+    <td class="tg-0pky">0.242178</td>
+    <td class="tg-0pky">0.413517	</td>
+    <td class="tg-0pky">2.86e+14</td>
+    <td class="tg-0pky">0.241268</td>
+    <td class="tg-0pky">0.412009</td>
+    <td class="tg-0pky">2.86e+14</td>
+    <td class="tg-0pky">0.241828</td>
+    <td class="tg-0pky">0.413479</td>
+    <td class="tg-0pky">2.87e+14</td>
   </tr>
   <tr>
     <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">0.115776</td>
-    <td class="tg-0pky">0.232347</td>
-    <td class="tg-0pky">7.88e+00</td>
-    <td class="tg-0pky">0.165468</td>
-    <td class="tg-0pky">0.309157</td>
-    <td class="tg-0pky">5.46e+00</td>
-    <td class="tg-0pky">0.138558</td>
-    <td class="tg-0pky">0.268663</td>
-    <td class="tg-0pky">6.24e+00</td>
+    <td class="tg-0pky">0.777366</td>
+    <td class="tg-0pky">0.898209</td>
+    <td class="tg-0pky">9.49e-01</td>
+    <td class="tg-0pky">0.777086</td>
+    <td class="tg-0pky">0.897553</td>
+    <td class="tg-0pky">9.48e-01</td>
+    <td class="tg-0pky">0.775993</td>
+    <td class="tg-0pky">0.897156</td>
+    <td class="tg-0pky">9.48e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">0.113634</td>
-    <td class="tg-0pky">0.234785</td>
-    <td class="tg-0pky">5.55e+00</td>
-    <td class="tg-0pky">0.162335</td>
-    <td class="tg-0pky">0.310746</td>
-    <td class="tg-0pky">4.6e+00</td>
-    <td class="tg-0pky">0.136083</td>
-    <td class="tg-0pky">0.271151</td>
-    <td class="tg-0pky">4.81e+00</td>
+    <td class="tg-0pky">0.756448</td>
+    <td class="tg-0pky">0.875055</td>
+    <td class="tg-0pky">9.51e-01</td>
+    <td class="tg-0pky">0.756012</td>
+    <td class="tg-0pky">0.874249</td>
+    <td class="tg-0pky">9.51e-01</td>
+    <td class="tg-0pky">0.755060</td>
+    <td class="tg-0pky">0.873975</td>
+    <td class="tg-0pky">9.50e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">0.071421</td>
-    <td class="tg-0pky">0.189044</td>
-    <td class="tg-0pky">1.01e+00</td>
-    <td class="tg-0pky">0.161633</td>
-    <td class="tg-0pky">0.309093</td>
-    <td class="tg-0pky">2.17e+00</td>
-    <td class="tg-0pky">0.127701</td>
-    <td class="tg-0pky">0.243318</td>
-    <td class="tg-0pky">2.89e+00</td>
+    <td class="tg-0pky">0.123852</td>
+    <td class="tg-0pky">0.221070</td>
+    <td class="tg-0pky">5.11e-01</td>
+    <td class="tg-0pky">0.128857</td>
+    <td class="tg-0pky">0.225485</td>
+    <td class="tg-0pky">5.34e-01</td>
+    <td class="tg-0pky">0.123321</td>
+    <td class="tg-0pky">0.217309</td>
+    <td class="tg-0pky">5.09e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
@@ -232,7 +255,7 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
 </table>
 
 
-### Classification performance for MCAR, MAR, and MNAR missingness type
+### 4.1.2 Classification performance for MCAR, MAR, and MNAR missingness type
 
 <table class="tg">
 <thead>
@@ -301,7 +324,7 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
 </table>
 
 
-### Imputation performance over varying missingness rate
+### 4.1.3 Imputation performance over varying missingness rate
 
 <table class="tg">
 <thead>
@@ -498,7 +521,7 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
 </table>
 
 
-### Classification performance over varying missingness rate
+### 4.1.4 Classification performance over varying missingness rate
 
 <table class="tg">
 <thead>
@@ -581,9 +604,9 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
 </tbody>
 </table>
 
-## Results PAMAPS2 Dataset
+## 4.2 Comparative Study PAMAPS2 Dataset
 
-### Imputation performance for MCAR, MAR, and MNAR missingness type
+### 4.2.1 Imputation performance for MCAR, MAR, and MNAR missingness type
 
 <table class="tg">
 <thead>
@@ -668,6 +691,17 @@ For the downstream classification task, we are using a CNN-based, unlike the RNN
   </tr>
 </tbody>
 </table>
+
+## 4.3 Our Approach's Imputation Performance
+### 4.3.1 Original Signal v/s Missing Signal v/s Imputed Signal for MCAR missingness
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/saits_mcar_timeseries.png)
+
+### 4.3.2 Original Signal v/s Missing Signal v/s Imputed Signal for MAR missingness
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/saits_mar_timeseries.png)
+
+### 4.3.3 Original Signal v/s Missing Signal v/s Imputed Signal for MNAR missingness
+![alt text](https://github.com/RushiBhatt007/ece209as_project/blob/main/docs/media/saits_mnar_timeseries.png)
+
 
 
 # 5. Discussion and Conclusions
