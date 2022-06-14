@@ -132,10 +132,14 @@ A brief summary of the research work mentioned in earlier sections can be found 
 * **Median imputation** - Filling the missing data with median of the values in the window. 
 
 ### 3.2.2 BRITS
+BRITS is a Bidirectional Recurrent Imputation for Time Series. It learns the missing values in a bidirectional recurrent dynamical system, and the implementation is as shown in the figure below.The imputed values are treated as variables of RNN graph and can be effectively updated during backpropagation. However, it still has some limitations mainly due to compounding errors which exist in RNN-based models. 
 
 ### 3.2.3 SAITS
+SAITS is Self-Attention-based Imputation for Time Series.Trained by a joint-optimization approach, SAITS learns missing values from a weighted combination of two diagonally-masked self-attention (DMSA) blocks. DMSA explicitly captures both the temporal dependencies and feature correlations between time steps, which improves imputation accuracy and training speed. Meanwhile, the weighted combination design enables SAITS to dynamically assign weights to the learned representations from two DMSA blocks according to the attention map and the missingness information. The model block diagram and training cyle is as shown in the figures below.
 
 ## 3.3 Classification Models
+
+For the downstream classification task, we are using a CNN-based, unlike the RNN-based one, which both BRITS and SAITS are using. We chose this because we observed that RNNs take a very long time for training on our HAR datasets. For instance, our CNN-based classifier took about 15 sec/ epoch, whereas their proposed RNN classifier took upwards of 8-9 minutes/ epoch. The figure below shows the pipeline of our approach.
 
 # 4. Evaluation and Results
 
