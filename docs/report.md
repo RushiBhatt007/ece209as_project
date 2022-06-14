@@ -604,216 +604,63 @@ A brief summary of the research work mentioned in earlier sections can be found 
 <tbody>
   <tr>
     <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">43.028692</td>
-    <td class="tg-0pky">296.359563</td>
+    <td class="tg-0pky">43.001326</td>
+    <td class="tg-0pky">296.209078</td>
     <td class="tg-0pky">1.27e+18</td>
-    <td class="tg-0pky">60.803443</td>
-    <td class="tg-0pky">403.765697</td>
-    <td class="tg-0pky">9.00e+17</td>
-    <td class="tg-0pky">51.914366</td>
-    <td class="tg-0pky">354.229207</td>
-    <td class="tg-0pky">1.53e+18</td>
+    <td class="tg-0pky">44.795440</td>
+    <td class="tg-0pky">302.214721</td>
+    <td class="tg-0pky">1.32e+18</td>
+    <td class="tg-0pky">43.000029</td>
+    <td class="tg-0pky">296.078032</td>
+    <td class="tg-0pky">1.26e+18</td>
   </tr>
   <tr>
     <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">1790.0171816</td>
-    <td class="tg-0pky">2112.776316</td>
-    <td class="tg-0pky">9.79e-01</td>
-    <td class="tg-0pky">2685.414685</td>
-    <td class="tg-0pky">2879.954673</td>
-    <td class="tg-0pky">9.80e-01</td>
-    <td class="tg-0pky">2237.756880</td>
-    <td class="tg-0pky">2525.974987</td>
-    <td class="tg-0pky">9.8e-01</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">1789.995646</td>
-    <td class="tg-0pky">2112.789127</td>
-    <td class="tg-0pky">9.79e-01</td>
-    <td class="tg-0pky">2685.422465</td>
-    <td class="tg-0pky">2879.988146</td>
-    <td class="tg-0pky">9.80e-01</td>
-    <td class="tg-0pky">2237.775494</td>
-    <td class="tg-0pky">2526.036182</td>
-    <td class="tg-0pky">9.80e-01</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">10.514203</td>
-    <td class="tg-0pky">89.759356</td>
-    <td class="tg-0pky">0.351535</td>
-    <td class="tg-0pky">37.548802</td>
-    <td class="tg-0pky">389.854345</td>
-    <td class="tg-0pky">0.789765</td>
-    <td class="tg-0pky">39.749156</td>
-    <td class="tg-0pky">319.851974</td>
+    <td class="tg-0pky">1827.534261</td>
+    <td class="tg-0pky">2135.402027</td>
+    <td class="tg-0pky">1.00e+00</td>
+    <td class="tg-0pky">1843.997157</td>
+    <td class="tg-0pky">2148.611512</td>
+    <td class="tg-0pky">1.00e+00</td>
+    <td class="tg-0pky">1824.700344</td>
+    <td class="tg-0pky">2132.157724</td>
     <td class="tg-0pky">1.00e+00</td>
   </tr>
   <tr>
-    <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">2.552372</td>
-    <td class="tg-0pky">17.20966</td>
-    <td class="tg-0pky">0.059293</td>
-    <td class="tg-0pky">17.135756</td>
-    <td class="tg-0pky">130.071705</td>
-    <td class="tg-0pky">0.281622</td>
-    <td class="tg-0pky">24.881084</td>
-    <td class="tg-0pky">176.31499</td>
-    <td class="tg-0pky">0.478812</td>
-  </tr>
-</tbody>
-</table>
-
-
-### Classification performance for MCAR, MAR, and MNAR missingness type
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky" rowspan="2"></th>
-    <th class="tg-fymr" colspan="2">MCAR</th>
-    <th class="tg-fymr" colspan="2">MAR</th>
-    <th class="tg-fymr" colspan="2">MNAR</th>
-  </tr>
-  <tr>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-    <th class="tg-fymr">Acc.</th>
-    <th class="tg-fymr">F1-Score</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-fymr">Zero Imputation</td>
-    <td class="tg-0pky">23.14%</td>
-    <td class="tg-0pky">0.21</td>
-    <td class="tg-0pky">24.74%</td>
-    <td class="tg-0pky">0.23</td>
-    <td class="tg-0pky">19.02%</td>
-    <td class="tg-0pky">0.19</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">Mean Imputation</td>
-    <td class="tg-0pky">41.32%</td>
-    <td class="tg-0pky">0.44</td>
-    <td class="tg-0pky">36.60%</td>
-    <td class="tg-0pky">0.37</td>
-    <td class="tg-0pky">43.98%</td>
-    <td class="tg-0pky">0.47</td>
-  </tr>
-  <tr>
     <td class="tg-fymr">Median Imputation</td>
-    <td class="tg-0pky">43.42%</td>
-    <td class="tg-0pky">0.44</td>
-    <td class="tg-0pky">38.71%</td>
-    <td class="tg-0pky">0.39</td>
-    <td class="tg-0pky">39.72%</td>
-    <td class="tg-0pky">0.42</td>
+    <td class="tg-0pky">1827.516164</td>
+    <td class="tg-0pky">2135.420835</td>
+    <td class="tg-0pky">1.00e+00</td>
+    <td class="tg-0pky">1843.981177</td>
+    <td class="tg-0pky">2148.633080</td>
+    <td class="tg-0pky">1.00e+00</td>
+    <td class="tg-0pky">1824.687548</td>
+    <td class="tg-0pky">2132.176473</td>
+    <td class="tg-0pky">1.00e+00</td>
   </tr>
   <tr>
     <td class="tg-fymr">BRITS Imputation</td>
-    <td class="tg-0pky">88.79%</td>
-    <td class="tg-0pky">0.91</td>
-    <td class="tg-0pky">87.63%</td>
-    <td class="tg-0pky">0.89</td>
-    <td class="tg-0pky">88.69%</td>
-    <td class="tg-0pky">0.90</td>
+    <td class="tg-0pky">30.418686</td>
+    <td class="tg-0pky">147.324833</td>
+    <td class="tg-0pky">4.02e-01</td>
+    <td class="tg-0pky">31.762073</td>
+    <td class="tg-0pky">151.236273</td>
+    <td class="tg-0pky">3.68e-01</td>
+    <td class="tg-0pky">36.282232</td>
+    <td class="tg-0pky">150.060937</td>
+    <td class="tg-0pky">4.00e-01</td>
   </tr>
   <tr>
     <td class="tg-fymr">SAITS Imputation</td>
-    <td class="tg-0pky">91.41%</td>
-    <td class="tg-0pky">0.94</td>
-    <td class="tg-0pky">89.32%</td>
-    <td class="tg-0pky">0.90</td>
-    <td class="tg-0pky">88.92%</td>
-    <td class="tg-0pky">0.91</td>
-  </tr>
-</tbody>
-</table>
-
-
-### Classification performance over varying missingness rate
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-fymr" rowspan="2"></th>
-    <th class="tg-1wig" colspan="2">BRITS Imputation</th>
-    <th class="tg-1wig" colspan="2">SAITS Imputation</th>
-  </tr>
-  <tr>
-    <th class="tg-1wig">Acc.</th>
-    <th class="tg-1wig">F1-Score</th>
-    <th class="tg-1wig">Acc.</th>
-    <th class="tg-1wig">F1-Score</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-fymr">10%</td>
-    <td class="tg-0lax">88.79%</td>
-    <td class="tg-0lax">0.91</td>
-    <td class="tg-0lax">91.41%</td>
-    <td class="tg-0lax">0.94</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">20%</td>
-    <td class="tg-0lax">86.63%</td>
-    <td class="tg-0lax">0.89</td>
-    <td class="tg-0lax">85.77%</td>
-    <td class="tg-0lax">0.86</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">30%</td>
-    <td class="tg-0lax">85.23%</td>
-    <td class="tg-0lax">0.88</td>
-    <td class="tg-0lax">83.71%</td>
-    <td class="tg-0lax">0.86</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">40%</td>
-    <td class="tg-0lax">78.65%</td>
-    <td class="tg-0lax">0.79</td>
-    <td class="tg-0lax">79.37%</td>
-    <td class="tg-0lax">0.79</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">50%</td>
-    <td class="tg-0lax">64.89%</td>
-    <td class="tg-0lax">0.64</td>
-    <td class="tg-0lax">73.19%</td>
-    <td class="tg-0lax">0.73</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">60%</td>
-    <td class="tg-0lax">59.11%</td>
-    <td class="tg-0lax">0.59</td>
-    <td class="tg-0lax">64.31%</td>
-    <td class="tg-0lax">0.65</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">70%</td>
-    <td class="tg-0lax">48.33%</td>
-    <td class="tg-0lax">0.49</td>
-    <td class="tg-0lax">58.33%</td>
-    <td class="tg-0lax">0.57</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">80%</td>
-    <td class="tg-0lax">40.69%</td>
-    <td class="tg-0lax">0.41</td>
-    <td class="tg-0lax">49.74%</td>
-    <td class="tg-0lax">0.50</td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">90%</td>
-    <td class="tg-0lax">36.30%</td>
-    <td class="tg-0lax">0.37</td>
-    <td class="tg-0lax">48.98%</td>
-    <td class="tg-0lax">0.49</td>
+    <td class="tg-0pky">18.222896</td>
+    <td class="tg-0pky">61.980596</td>
+    <td class="tg-0pky">4.2e-01</td>
+    <td class="tg-0pky">17.388033</td>
+    <td class="tg-0pky">53.826534</td>
+    <td class="tg-0pky">2.33e-01</td>
+    <td class="tg-0pky">26.891733</td>
+    <td class="tg-0pky">70.600211</td>
+    <td class="tg-0pky">3.65e-01</td>
   </tr>
 </tbody>
 </table>
